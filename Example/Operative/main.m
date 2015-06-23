@@ -6,7 +6,9 @@
 //  Copyright (c) 2014 Tom Wilson. All rights reserved.
 //
 
-@import UIKit;
+
+#import <UIKit/UIKit.h>
+
 #import "OPAppDelegate.h"
 
 int main(int argc, char * argv[])
