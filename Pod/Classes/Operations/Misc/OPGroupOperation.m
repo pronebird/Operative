@@ -20,9 +20,17 @@
 // THE SOFTWARE.
 
 #import "OPGroupOperation.h"
-#import <Foundation/Foundation.h>
+#import "OPOperationQueue.h"
+
 
 @interface OPGroupOperation() <OPOperationQueueDelegate>
+
+- (instancetype)init NS_DESIGNATED_INITIALIZER;
+
+/**
+ *  Common initialized elements used in both `-init` & `-initWithOperations:`
+ */
+- (void)commonInit;
 
 @property (strong, nonatomic) OPOperationQueue *internalQueue;
 @property (strong, nonatomic) NSBlockOperation *finishingOperation;
@@ -31,87 +39,117 @@
 
 @end
 
+
 @implementation OPGroupOperation
 
-- (instancetype) init
+
+#pragma mark -
+#pragma mark -
+
+- (void)addOperation:(NSOperation *)operation
 {
-    self = [super init];
-    if (self)
-    {
-        _internalQueue = [[OPOperationQueue alloc] init];
-        _internalQueue.suspended = YES;
-        _internalQueue.delegate = self;
-        
-        _finishingOperation = [NSBlockOperation blockOperationWithBlock:^{}];
-        
-        _aggregatedErrors = [[NSMutableArray alloc] init];
-    }
-    return self;
+    [self.internalQueue addOperation:operation];
 }
 
-- (instancetype) initWithOperations:(NSArray *) operations
+- (void)aggregateError:(NSError *)error
 {
-    self = [super init];
-    
-    if (self)
-    {
-        [_internalQueue addOperations:operations waitUntilFinished:NO];
-    }
-    return self;
+    [self.aggregatedErrors addObject:error];
 }
 
-- (void) cancel
+- (void)operationDidFinish:(NSOperation *)operation withErrors:(NSArray *)errors
+{
+    // No-op
+    // For use by subclass.
+}
+
+
+#pragma mark - Overrides
+#pragma mark -
+
+- (void)cancel
 {
     [self.internalQueue cancelAllOperations];
     [super cancel];
 }
 
-- (void) execute
+- (void)execute
 {
-    self.internalQueue.suspended = false;
+    [self.internalQueue setSuspended:NO];
     [self.internalQueue addOperation:self.finishingOperation];
 }
 
-- (void) addOperation:(NSOperation *) operation
-{
-    [self.internalQueue addOperation:operation];
-}
-
-- (void) aggregateError:(NSError *) error
-{
-    [self.aggregatedErrors addObject:error];
-}
-
-- (void) operationDidFinish:(NSOperation *) operation withErrors:(NSArray *) errors
-{
-    // for user by subclassers
-}
 
 #pragma mark - OPOperationQueueDelegate
+#pragma mark -
 
-- (void) operationQueue:(OPOperationQueue *)operationQueue willAddOperation:(NSOperation *)operation
+- (void)operationQueue:(OPOperationQueue *)operationQueue willAddOperation:(NSOperation *)operation
 {
-    NSAssert(!self.finishingOperation.finished && !self.finishingOperation.isExecuting, @"cannot add new operations to a group after the group has completed");
-    
-    if (operation != self.finishingOperation)
-    {
+    NSAssert(![self.finishingOperation isFinished] && ![self.finishingOperation isExecuting], @"Cannot add new operations to a group after the group has completed");
+
+    if ([self finishingOperation] != operation) {
         [self.finishingOperation addDependency:operation];
     }
 }
 
-- (void) operationQueue:(OPOperationQueue *)operationQueue operationDidFinish:(NSOperation *)operation withErrors:(NSArray *)errors
+- (void)operationQueue:(OPOperationQueue *)operationQueue operationDidFinish:(NSOperation *)operation withErrors:(NSArray *)errors
 {
     [self.aggregatedErrors addObjectsFromArray:errors];
-    
-    if (operation == self.finishingOperation)
-    {
-        self.internalQueue.suspended = YES;
-        [self finishWithErrors:self.aggregatedErrors];
-    }
-    else
-    {
+
+    if ([self finishingOperation] == operation) {
+        [self.internalQueue setSuspended:YES];
+        [self finishWithErrors:[self aggregatedErrors]];
+    } else {
         [self operationDidFinish:operation withErrors:errors];
     }
+}
+
+
+#pragma mark - Lifecycle
+#pragma mark -
+
+- (instancetype)init
+{
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+    [self commonInit];
+    
+    return self;
+}
+
+- (instancetype)initWithOperations:(NSArray *)operations
+{
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+    [self commonInit];
+    
+    for (NSOperation *operation in operations) {
+        [_internalQueue addOperation:operation];
+    }
+    
+    return self;
+}
+
+
+#pragma mark - Private
+#pragma mark -
+
+- (void)commonInit
+{
+    OPOperationQueue *queue = [[OPOperationQueue alloc] init];
+    [queue setSuspended:YES];
+    [queue setDelegate:self];
+    
+    _internalQueue = queue;
+    
+    _finishingOperation = [NSBlockOperation blockOperationWithBlock:^{}];
+    
+    _aggregatedErrors = [[NSMutableArray alloc] init];
 }
 
 @end

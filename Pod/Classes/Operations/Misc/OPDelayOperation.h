@@ -19,11 +19,33 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Operative/Operative.h>
+#import "OPOperation.h"
 
+/**
+ *  `OPDelayOperation` is an `OPOperation` that will simply wait for a given time
+ *  interval, or until a specific `NSDate`.
+ *
+ *  It is important to note that this operation does **not** use the `sleep()`
+ *  function, since that is inefficient and blocks the thread on which it is called.
+ *  Instead, this operation uses `dispatch_after` to know when the appropriate amount
+ *  of time has passed.
+ *
+ *  If the interval is negative, or the `NSDate` is in the past, then this operation
+ *  immediately finishes.
+ *
+ *  - returns: An instance of an `OPDelayOperation`
+ */
 @interface OPDelayOperation : OPOperation
 
-- (instancetype) initWithDate:(NSDate *) date;
-- (instancetype) initWithTimeInterval:(NSTimeInterval) interval;
+- (instancetype)initWithTimeInterval:(NSTimeInterval)interval NS_DESIGNATED_INITIALIZER;
+
+- (instancetype)initWithDate:(NSDate *)date;
+
+/**
+ *  Unused `-init` method.
+ *  @see -initWithTimeInterval:
+ *  @see -initWithDate:
+ */
+- (instancetype)init NS_UNAVAILABLE;
 
 @end

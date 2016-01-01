@@ -29,14 +29,22 @@ typedef NS_ENUM(NSUInteger, OPOperationConditionUserNotificationBehavior) {
     OPOperationConditionBehaviorReplace,
 };
 
-extern NSString * const kCurrentSetings;
+extern NSString * const kCurrentSettings;
 extern NSString * const kDesiredSettings;
 
 @interface OPOperationConditionUserNotification : NSObject <OPOperationCondition>
 
-/* designated initializer */
-- (instancetype) initWithSettings:(UIUserNotificationSettings *) settings application:(UIApplication *) application behavior:(OPOperationConditionUserNotificationBehavior) behavior;
-- (instancetype) initWithSettings:(UIUserNotificationSettings *) settings application:(UIApplication *) application;
+- (instancetype)initWithSettings:(UIUserNotificationSettings *)settings
+                     application:(UIApplication *)application
+                        behavior:(OPOperationConditionUserNotificationBehavior)behavior NS_DESIGNATED_INITIALIZER;
+
+- (instancetype)initWithSettings:(UIUserNotificationSettings *)settings application:(UIApplication *)application;
+
+/**
+ *  Unused `-init` method.
+ *  @see -initWithSettings:application:behavior
+ */
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

@@ -30,16 +30,24 @@
 // Operations
 #import "OPBlockOperation.h"
 #import "OPAlertOperation.h"
-#import "OPURLSessionOperation.h"
+#import "OPURLSessionTaskOperation.h"
 #import "OPGroupOperation.h"
 #import "OPLocationOperation.h"
 #import "OPDelayOperation.h"
 
 // Conditions
+#import "OPLocationCondition.h"
+#import "OPOperationConditionMutuallyExclusive.h"
 #import "OPOperationConditionUserNotification.h"
+#import "OPPhotosCondition.h"
+#import "OPReachabilityCondition.h"
+#import "OPRemoteNotificationCondition.h"
+#import "OPSilentCondition.h"
 
 // Observers
 #import "OPBlockObserver.h"
+#import "OPBackgroundObserver.h"
+#import "OPNetworkObserver.h"
 #import "OPTimeoutObserver.h"
 
 #endif
