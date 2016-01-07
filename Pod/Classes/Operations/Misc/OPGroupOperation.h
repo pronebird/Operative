@@ -58,7 +58,7 @@
 - (void)addOperation:(NSOperation *)operation;
 
 /**
- *  Adds an operation to the group after instantiation
+ *  Add multiple operations to the group after instantiation
  *
  *  @param operations Array of operations to add to the group
  */
