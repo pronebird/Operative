@@ -1,4 +1,4 @@
-// Operative.h
+// OPContactsPermissionOperation.m
 // Copyright (c) 2015 Tom Wilson <tom@toms-stuff.net>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,50 +19,43 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#ifndef Pods_Operative_h
-#define Pods_Operative_h
-
-// Core
-#import "OPOperation.h"
-#import "OPOperationQueue.h"
-#import "OPOperationObserver.h"
-
-// Operations
-#import "OPBlockOperation.h"
-#import "OPURLSessionTaskOperation.h"
-#import "OPGroupOperation.h"
-#import "OPDelayOperation.h"
-
-#if TARGET_OS_IPHONE
-#import "OPMediaPermissionOperation.h"
-#import "OPLocationOperation.h"
-#import "OPAlertOperation.h"
-#endif
-
-// Conditions
+#import "OPContactsPermissionOperation.h"
 #import "OPOperationConditionMutuallyExclusive.h"
-#import "OPReachabilityCondition.h"
-#import "OPContactsCondition.h"
+#import <Contacts/Contacts.h>
 
-#if TARGET_OS_IPHONE
-#import "OPLocationCondition.h"
-#import "OPOperationConditionUserNotification.h"
-#import "OPPhotosCondition.h"
-#import "OPRemoteNotificationCondition.h"
-#import "OPVideoCondition.h"
-#import "OPAudioCondition.h"
-#endif
+@implementation OPContactsPermissionOperation
 
-#import "OPSilentCondition.h"
-#import "OPNoCancelledDependenciesCondition.h"
+- (instancetype)init
+{
+    self = [super init];
+    if(!self) {
+        return nil;
+    }
+    
+    [self addCondition:[OPOperationConditionMutuallyExclusive alertPresentationExclusivity]];
+    
+    return self;
+}
 
-// Observers
-#import "OPBlockObserver.h"
-#import "OPTimeoutObserver.h"
+- (void)execute
+{
+    CNEntityType entityType = CNEntityTypeContacts;
+    CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:entityType];
+    
+    if(status == CNAuthorizationStatusNotDetermined)
+    {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            CNContactStore *store = [[CNContactStore alloc] init];
+            
+            [store requestAccessForEntityType:entityType completionHandler:^(BOOL granted, NSError *error) {
+                [self finish];
+            }];
+        });
+    }
+    else
+    {
+        [self finish];
+    }
+}
 
-#if TARGET_OS_IPHONE
-#import "OPBackgroundObserver.h"
-#import "OPNetworkObserver.h"
-#endif
-
-#endif
+@end
