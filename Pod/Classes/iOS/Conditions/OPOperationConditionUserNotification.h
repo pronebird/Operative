@@ -34,6 +34,11 @@ extern NSString * const kDesiredSettings;
 
 @interface OPOperationConditionUserNotification : NSObject <OPOperationCondition>
 
+/**
+ *  Class method called upon by `UIApplication` when a registration event received.
+ */
++ (void)didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings;
+
 - (instancetype)initWithSettings:(UIUserNotificationSettings *)settings
                      application:(UIApplication *)application
                         behavior:(OPOperationConditionUserNotificationBehavior)behavior NS_DESIGNATED_INITIALIZER;

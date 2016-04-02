@@ -27,6 +27,7 @@
 #import "NSError+Operative.h"
 #import "UIUserNotificationSettings+Operative.h"
 
+static NSString *const kOPUserNotificationPermissionNotificationName = @"UserNotificationPermissionNotification";
 
 NSString * const kCurrentSettings = @"CurrentUserNotificationSettings";
 NSString * const kDesiredSettings = @"DesiredUserNotificationSettings";
@@ -47,6 +48,14 @@ NSString * const kDesiredSettings = @"DesiredUserNotificationSettings";
 #pragma mark - OPUserNotificationPermissionOperation
 #pragma mark -
 
+
+/**
+ *  A private `OPOperation` to get notified when notification settings are registered on `UIApplication`.
+ *
+ *  - note: This operation requires you to call either
+ *  `[OPOperationConditionUserNotification didRegisterUserNotificationSettings:]` in the appropriate
+ *  `UIApplicationDelegate` method
+ */
 @interface OPUserNotificationPermissionOperation : OPOperation
 
 @property (strong, nonatomic) UIUserNotificationSettings *settings;
@@ -79,6 +88,8 @@ NSString * const kDesiredSettings = @"DesiredUserNotificationSettings";
 - (void)execute
 {
     dispatch_async(dispatch_get_main_queue(), ^{
+        NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+
         UIUserNotificationSettings *currentSettings = [self.application currentUserNotificationSettings];
         UIUserNotificationSettings *settingsToRegister;
 
@@ -91,11 +102,18 @@ NSString * const kDesiredSettings = @"DesiredUserNotificationSettings";
                 settingsToRegister = [self settings];
                 break;
         }
+        
+        [center addObserver:self selector:@selector(didReceiveUserSettingsRegistrationResponse:) name:kOPUserNotificationPermissionNotificationName object:nil];
 
         [self.application registerUserNotificationSettings:settingsToRegister];
-
-        [self finish];
     });
+}
+
+- (void)didReceiveUserSettingsRegistrationResponse:(NSNotification *)note
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    [self finish];
 }
 
 @end
@@ -105,6 +123,14 @@ NSString * const kDesiredSettings = @"DesiredUserNotificationSettings";
 #pragma mark -
 
 @implementation OPOperationConditionUserNotification
+
+#pragma mark - Class Methods
+#pragma mark -
+
++ (void)didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:kOPUserNotificationPermissionNotificationName object:nil];
+}
 
 #pragma mark - Lifecycle
 #pragma mark -
@@ -138,7 +164,7 @@ NSString * const kDesiredSettings = @"DesiredUserNotificationSettings";
 
 - (BOOL)isMutuallyExclusive
 {
-    return NO;
+    return YES;
 }
 
 - (NSOperation *)dependencyForOperation:(OPOperation *)operation
