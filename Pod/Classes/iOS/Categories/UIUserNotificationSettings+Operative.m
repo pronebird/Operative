@@ -47,7 +47,7 @@
 
 - (UIUserNotificationSettings *)settingsByMerging:(UIUserNotificationSettings *)settings;
 {
-    UIUserNotificationType mergedTypes = settings.types & self.types;
+    UIUserNotificationType mergedTypes = (settings.types | self.types);
 
     NSSet *myCategories = self.categories ? self.categories : [NSSet set];
 
