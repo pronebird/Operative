@@ -44,13 +44,11 @@
     
     if(status == CNAuthorizationStatusNotDetermined)
     {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            CNContactStore *store = [[CNContactStore alloc] init];
-            
-            [store requestAccessForEntityType:entityType completionHandler:^(BOOL granted, NSError *error) {
-                [self finish];
-            }];
-        });
+        CNContactStore *store = [[CNContactStore alloc] init];
+        
+        [store requestAccessForEntityType:entityType completionHandler:^(BOOL granted, NSError *error) {
+            [self finish];
+        }];
     }
     else
     {
