@@ -170,8 +170,6 @@
     evaluationOperation.qualityOfService = self.qualityOfService;
     evaluationOperation.name = [NSString stringWithFormat:@"Condition evaluator for %@", [self description]];
     
-    [self addDependency:evaluationOperation];
-    
     return evaluationOperation;
 }
 

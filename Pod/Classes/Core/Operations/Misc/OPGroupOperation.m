@@ -47,23 +47,20 @@
 
 - (NSString *)debugDescription
 {
-    @synchronized (self)
+    NSMutableString *mutableString = [[NSMutableString alloc] init];
+    NSString *description = [super debugDescription];
+    NSString *result;
+    
+    NSArray *lines = [[self.internalQueue debugDescription] componentsSeparatedByString:@"\n"];
+    
+    for(NSString *str in lines)
     {
-        NSMutableString *mutableString = [[NSMutableString alloc] init];
-        NSString *description = [super debugDescription];
-        NSString *result;
-        
-        NSArray *lines = [[_internalQueue debugDescription] componentsSeparatedByString:@"\n"];
-        
-        for(NSString *str in lines)
-        {
-            [mutableString appendFormat:@"\t%@\n", str];
-        }
-        
-        result = [description stringByAppendingFormat:@"\n%@", mutableString];
-        
-        return [result stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+        [mutableString appendFormat:@"\t%@\n", str];
     }
+    
+    result = [description stringByAppendingFormat:@"\n%@", mutableString];
+    
+    return [result stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
 }
 
 #pragma mark -
