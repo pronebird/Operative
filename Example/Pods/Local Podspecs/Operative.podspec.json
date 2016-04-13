@@ -14,13 +14,20 @@
   },
   "social_media_url": "https://twitter.com/tomwilson",
   "platforms": {
-    "ios": "7.0"
+    "ios": "8.0",
+    "osx": "10.10"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "Operative": [
-      "Pod/Assets/*.png"
+  "source_files": "Pod/Classes/Operative.h",
+  "ios": {
+    "source_files": "Pod/Classes/{Core,iOS}/**/*",
+    "frameworks": [
+      "UIKit",
+      "AVFoundation"
     ]
-  }
+  },
+  "osx": {
+    "source_files": "Pod/Classes/{Core,OSX}/**/*"
+  },
+  "weak_frameworks": "Contacts"
 }

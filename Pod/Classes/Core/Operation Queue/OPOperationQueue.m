@@ -114,6 +114,27 @@
                                                                              }];
             [opOperation addObserver:blockObserver];
         }
+        
+        /*
+         Add conditions evaluation operation.
+         
+         Previously condition evaluation would happen on Operation level.
+         However due to bug discovered in NSOperation we cannot safely manipulate NSOperation.isReady.
+         
+         Therefore we have to wrap condition evalutor into operation and make it dependency for main operation.
+         Evaluation errors are then passed back to main operation before its execution.
+         
+         Relevant discussions:
+         
+         1. https://github.com/danthorpe/Operations/issues/175
+         2. https://github.com/Kabal/Operative/issues/51
+         
+         */
+        NSOperation *conditionEvaluationOperation = [opOperation conditionEvaluationOperation];
+        
+        if(conditionEvaluationOperation) {
+            [self addOperation:conditionEvaluationOperation];
+        }
 
         /**
          *  Indicate to the operation that we've finished our extra work on it

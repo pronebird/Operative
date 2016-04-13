@@ -7,194 +7,195 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		031025BDA7810D69D046E666370C106F /* OPSilentCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = A20E74E0A8316A51BD185D36C0E6E641 /* OPSilentCondition.m */; };
-		045F7BBC2963D1B80A5B281C6C22DD5C /* OPOperationConditionEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DAF52603736234A37CB641F3DC25C19 /* OPOperationConditionEvaluator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		059E2B9B8FC1EB788BC573126639A7D4 /* OPExclusivityController.h in Headers */ = {isa = PBXBuildFile; fileRef = 764687D1BE0D3BA18094B70BC0464EC7 /* OPExclusivityController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BA61879CB74F15CA519FA810A184B37 /* OPOperationConditionEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 964A6A9EE3B03200D7E805454EA9ED8B /* OPOperationConditionEvaluator.m */; };
-		190F72155F79913D6E99034656427B59 /* OPOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C91AD89C6F4F46A50E5441237D47A16 /* OPOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20A8DC44139B139CE8E4731F21B1CA3C /* OPSilentCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4351F61FA84C87BE4CC637BC4972D960 /* OPSilentCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		226A2E1A6363DE3E0C5FB55C8D410B9B /* OPGroupOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F2636342C592A1604AACD3EF02F952 /* OPGroupOperation.m */; };
+		076D38BE545B84FCFDA3227B63ED21D0 /* OPPhotosCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = F808551A30F72042893820CBE6E83C8C /* OPPhotosCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0915A0133751D2C1C735EE398EEE30CA /* OPBlockObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 79893D485C37E22107E1477BFE0BCD89 /* OPBlockObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		095AB64AE991B33C3F3CDC23E39AF718 /* OPGroupOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E86DBE549EB423FEB28D3FFBCC5A1E9 /* OPGroupOperation.m */; };
+		131F0FE213FEBBB2A94A61E13D5064E2 /* NSOperation+Operative.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1675C9ECB73DCB38F21195824C75CC /* NSOperation+Operative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A4E19723BF67C9E32A18E73A102D95F /* OPOperationConditionMutuallyExclusive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7718CA66DA6D5432161FF2B3135F96 /* OPOperationConditionMutuallyExclusive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADA44F5DCB7B463BBE6C0083F8C0823 /* OPURLSessionTaskOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 811AB8A8F77F02D027A077C549CA50E2 /* OPURLSessionTaskOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B62A4501D16431AA19F0FBE624B1621 /* OPNetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F16DACDC5F7560D21B58CFDA9239BAA8 /* OPNetworkObserver.m */; };
+		1B9D1CBBF0E0C4F8DFFB31EBFCBD1D78 /* OPSilentCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 228E36E0BE02CA935FAD66A46A9730F4 /* OPSilentCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D6634873DA1F3D671EFEE04087FDB8D /* OPLocationCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 9135634D79514563C4C26AB6552C9FE9 /* OPLocationCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FE0DA2FCB03B0AF47FC89CFEC4E8967 /* Operative-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 585D8FFCD5A791EB6072E34FDE6362CE /* Operative-dummy.m */; };
+		298924B8F84A02376CEFA58BE40E085E /* OPReachabilityCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB362F5269EFDDD65372E123DBC60FA /* OPReachabilityCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D33BB4DB81B8B5327E62978F2CCDEA8 /* OPLocationCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = AA877B42B8E1CB12E8E72FAB1B5ED88A /* OPLocationCondition.m */; };
+		2F2F93604DD0732001EEDF54E81AEF6A /* NSError+Operative.h in Headers */ = {isa = PBXBuildFile; fileRef = D83790ACCE53B6E1C1CE3EF979A5FE12 /* NSError+Operative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F7D83651973474D209C3A0D412B3E01 /* OPBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4C095C4EC5102463679D0161D7DA21 /* OPBlockOperation.m */; };
+		32E5000F7C7F15688B0B046F51D3D935 /* OPTimeoutObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 484E542D2B35B024632572D8F3145AEE /* OPTimeoutObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		334030BC1ABF1535639E6C555C8BCE4E /* OPOperationCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 554D01E07EE28884E4FB582BCB6335B0 /* OPOperationCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37B81148AC2BEA6B6C2F0BDE84022541 /* NSOperation+Operative.m in Sources */ = {isa = PBXBuildFile; fileRef = 1007488856B3E3D3E356E779A93173C2 /* NSOperation+Operative.m */; };
 		37E58578641F70D6EF3E6EB3D2691D49 /* Pods-Operative_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 715BC572507568C05A6F21A16C6AEA27 /* Pods-Operative_Tests-dummy.m */; };
-		3F6F06E081444C70FCBDCCA0EF89DEC5 /* OPPhotosCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB117E1AEEB5B0EC7A5B1EE37C2F7A3 /* OPPhotosCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		431C8901D57E5F291C028A926FEE8076 /* OPNoCancelledDependenciesCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = B954FBD28A80EA269DF58C7374DDD1DC /* OPNoCancelledDependenciesCondition.m */; };
-		4B4128F26E2E70E221E3D969B549FE1E /* OPLocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F43DD6C16078AB1DFA44FFFCAFF5BE78 /* OPLocationOperation.m */; };
-		4B6AEA64C6D3B0FC23E23B278958F1E4 /* NSOperation+Operative.h in Headers */ = {isa = PBXBuildFile; fileRef = BAC5C9A060B5780340EC58EC2B955E86 /* NSOperation+Operative.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FF24BFF92BE91B17B157B7A8C236A40 /* OPGroupOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C79D7FA701EA22D08EA4F87485B0D7 /* OPGroupOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		571A2880DAB734C2EAF25ADDBA6A27D1 /* OPNoCancelledDependenciesCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E5A7E082E0D82E5E858C0E15EB0981 /* OPNoCancelledDependenciesCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59D94CC712E967D9160DFE78EA286931 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		5B6AFE862F1E85809EB38FB5565551AB /* OPTimeoutObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 014329DC5F12EF4CD0DB930AF38CE150 /* OPTimeoutObserver.m */; };
-		5CF602277BAE99851B01F047133D869E /* OPOperationConditionMutuallyExclusive.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AACB64FB6AE1AEF8A26FBD64581211 /* OPOperationConditionMutuallyExclusive.m */; };
-		5E1CC21E92BCE0677304DD2DD7AE280F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		5E23397C02F42F519C6DA3927BD89874 /* OPOperationObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B8E706777FD55A02D9F0F3F809DE89 /* OPOperationObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EC11B958F0CE613FCF04373B9DE22CE /* OPDelayOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 90676EA9C372767AD22FDE8E80E54B52 /* OPDelayOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61C6ED26F1FACB34E4C9A1F780214271 /* OPLocationCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C784B45B0166AB4B33B9843A23CB9 /* OPLocationCondition.m */; };
-		635BCCD7349D855E3C1B69CB1D286C73 /* OPOperationConditionUserNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 58182A289D6377CA71FCE4B7957E6FC5 /* OPOperationConditionUserNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6450237F19AC82569715292CCF6C6FF0 /* NSError+Operative.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B00EBF12D9AF74C733883F554BDE8A /* NSError+Operative.m */; };
-		729756B3C1038852E6CD79CCD7DED6B2 /* NSError+Operative.h in Headers */ = {isa = PBXBuildFile; fileRef = A791C34C813A73B8D77ED9EA8E113AAD /* NSError+Operative.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72A7615E129BE998127353E0D43AB31E /* OPNegatedCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B633241B8E583792DFDAD1ABFC12E1F /* OPNegatedCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73EC27AC14D66B148350C7C214CC44CB /* UIUserNotificationSettings+Operative.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E20C940DFD7E0AC35D09C78EF33A01 /* UIUserNotificationSettings+Operative.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7743C8AFE1009A94C5914BBD2F6382E9 /* OPReachabilityCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D1951CCEC81F33ED473BC98EC8B2F1B /* OPReachabilityCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		418821E7514FE8C49EDBAB3EEC035B11 /* OPSilentCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F4FB6FF4DF9637A4BD9BE85E49F77D /* OPSilentCondition.m */; };
+		423974206789F06C69A868A0C7009FA2 /* NSMutableDictionary+Operative.m in Sources */ = {isa = PBXBuildFile; fileRef = E282F5D2425288E8EF810159E8495157 /* NSMutableDictionary+Operative.m */; };
+		47E5EE35C13A903AA5FB518FA245CA3D /* OPAudioCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC948415662F31550B534658E469DA2 /* OPAudioCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4810D7DC5D0F74440AE3D6F9CFB36BB9 /* OPExclusivityController.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4662CE08117F475B34342BDBA508E1 /* OPExclusivityController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48794180252DFAA74FF0032BF260E103 /* OPOperationConditionUserNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D979F0115C1C6B698D02838708BF3D /* OPOperationConditionUserNotification.m */; };
+		48B84996E84BD7F90A3919477F7EFF2E /* OPContactsCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FC5FA685AE1AEB795DB53B0990335 /* OPContactsCondition.m */; };
+		4AF07074F7D1B6FDC1A7C0C8360596EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F866EA2B7D47D920CF64B0E05B695896 /* Foundation.framework */; };
+		4B6567B94A896F140DA0F4EBFBA1E6A4 /* OPOperationObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = B0434D71B894F7E567C42110097A9C23 /* OPOperationObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52A1939D8D6EB5E54FF397AD2D9FC544 /* OPPhotosCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F34DF67EDBFCC988C41931918D4A63FE /* OPPhotosCondition.m */; };
+		59D94CC712E967D9160DFE78EA286931 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F866EA2B7D47D920CF64B0E05B695896 /* Foundation.framework */; };
+		5A7A795FB1916752E921BD5BB202D621 /* OPVideoCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = F362881F84EF465A9669B73AD4A0F5E2 /* OPVideoCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E36196271A21707DFAEDEFDE864E812 /* OPExclusivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B247F0215C6F26B1A35E2A1A4071F2 /* OPExclusivityController.m */; };
+		641FD926D2FD840098A6C393B010C067 /* OPNetworkObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 2953BD32EED85EC412CF5E34DC8BB88F /* OPNetworkObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65F06F0FBC1FF1AAB5C7E6AF6E283284 /* OPDelayOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BE6E889BC04C5504B9CCFB589B649F6 /* OPDelayOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		688EBEE68504DDF70B3A86B4E863C96A /* OPContactsPermissionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D95CF99AF851721AA69E69646DEA07 /* OPContactsPermissionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69DE9DFE87119803B0DC3B846DDA3325 /* OPLocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F0190B4EFEC34675F5A091E316655 /* OPLocationOperation.m */; };
+		6FCBE4CE29C08723DF2F868D37DEBBB3 /* OPBlockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B10242854016E7404CDA4E73CD0A59 /* OPBlockObserver.m */; };
+		718BBEB47A67FA20F41E3F86E8D185E5 /* OPLocationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 961939C85C68B14A211BC21604CB60E5 /* OPLocationOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722B7E44A25C0BF018B7D7100D10E412 /* OPContactsCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E4653F73126A12ACF3184F3E616515 /* OPContactsCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72DEA9232551E2DF03965E6E90505FA6 /* OPOperationConditionMutuallyExclusive.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B57A2722F1098A960CEE1FF8A113ED /* OPOperationConditionMutuallyExclusive.m */; };
+		744F50ED81D011AA1A3592D4AEB87361 /* OPTimeoutObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7996E41E14D15DC9B061CEB81201F3 /* OPTimeoutObserver.m */; };
 		780548D18FF99E2D2C5CE8134E0772B1 /* Pods-Operative_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D426287A7B65B531DFA39EF9D1B24C21 /* Pods-Operative_Example-dummy.m */; };
-		7EB05362F0F830A328FAEF829AEF2F2F /* OPDelayOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 978EAFC809ACB7443BF5CD6CCC4B7392 /* OPDelayOperation.m */; };
-		8736736305CE8903FF3EDC46EC7E7A0A /* OPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E33581721F70535F0C854C4FCDE35AB /* OPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CA8CC5B4232CA0E5ABC7F963FE3C708 /* OPRemoteNotificationCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F45594178E911C502EC6B4E8AF63F59 /* OPRemoteNotificationCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		900F9202C4CFCCBF53CE8CD6F152B042 /* UIUserNotificationSettings+Operative.m in Sources */ = {isa = PBXBuildFile; fileRef = C256DCA7F3E7824482983BF1F88E28EB /* UIUserNotificationSettings+Operative.m */; };
-		96238766C92591BB5673DECA5740BADB /* NSOperation+Operative.m in Sources */ = {isa = PBXBuildFile; fileRef = 564DFF7C53495B3F8B50FAB563522914 /* NSOperation+Operative.m */; };
-		9B022D6796358D3AFAAA57CFE3F87DFD /* OPOperationConditionUserNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0A5ED9318B4393277DCC7CBEB2C1F4 /* OPOperationConditionUserNotification.m */; };
-		A0299F12AAC392BBC4AA0DD56A42301C /* OPURLSessionTaskOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94059B1A8C4C7A738B1877325477EC4E /* OPURLSessionTaskOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A551CDC32156AC3387FBF99981E07A7C /* OPBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B345F786E9199A71998DFF060E0B798 /* OPBlockOperation.m */; };
-		A7C33F3C09B558E2B56DE59012FD57EA /* OPOperationCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = C1146C5E59559ED6A188318CF28B9DFE /* OPOperationCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7E06C49F820EA471E10E49B9EE176B9 /* NSMutableDictionary+Operative.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A00A5337C83DA9385E50DA5FD85476 /* NSMutableDictionary+Operative.m */; };
-		A9D4CB15D4EF6D4D3E8C41617DB3BE5E /* OPBlockObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = CF61F1C242844B8B7A4EFC560B377ABC /* OPBlockObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADBDEE4079105437990AC74AE8C22C39 /* OPURLSessionTaskOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35381F28B8FA35B9548A55EB4812877D /* OPURLSessionTaskOperation.m */; };
-		AF737269674ACB79A5289DF994280F8C /* Operative.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C3B0BFB5DD42A5680259493960BE00E /* Operative.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0AB848656603973B9E6A86173B6509B /* OPNegatedCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2FA5401889EA61D929CC9434659CD1 /* OPNegatedCondition.m */; };
-		B2590D482B6CD8947149AE9B28B98D9C /* OPOperationConditionMutuallyExclusive.h in Headers */ = {isa = PBXBuildFile; fileRef = 793504B8AECACCE1B886613C8AA2EED8 /* OPOperationConditionMutuallyExclusive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2BC7C500AAFE34F38E5BB0296821D07 /* OPPhotosCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BEF691997407F8767572BE1471D45 /* OPPhotosCondition.m */; };
-		B4AFBA7854FE6B27A31F6DB2E880C946 /* OPBlockOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E96ACCA651E7176A14121C7A27B76BB /* OPBlockOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB9094DA6BAC0BD52B760841683547D3 /* OPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 97851D7216D459C882EA69FDE6F8798E /* OPOperation.m */; };
-		BE117D307EF4A047BC7371644EB40EBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		C3A9D6F4AD92FD2329A8795ED61BAD8B /* NSMutableDictionary+Operative.h in Headers */ = {isa = PBXBuildFile; fileRef = 455C709EF72B7CC5F4C2BFCEE8BE4FD9 /* NSMutableDictionary+Operative.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB8F443CB251F3587CB1188E8FCC51D6 /* OPRemoteNotificationCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C79C34ABE247425908E04EEBF344AF /* OPRemoteNotificationCondition.m */; };
-		D0AFE73D5255FAF32E6D70747559F06D /* OPNetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCB38C87A66943B1B84FFE802A856A1 /* OPNetworkObserver.m */; };
-		D1B15B4DB78A6B4B4FC2AE7E0FE31625 /* OPLocationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B4411B7ED951E7B15D1CBF134F27FE8B /* OPLocationOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D985D2CC5B0EA84B76EFDCBA15B6EEDC /* OPNetworkObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFE8A130DB24F3C5F1716E8C8723FB7 /* OPNetworkObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEDBA378423E66665DD5678704FFC46B /* OPAlertOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E00DD8B797C36FDB930DEFDE0FC7FF /* OPAlertOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFB09B9B2113F47C6FC13A27CAD435AA /* OPOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E43FCF309E16BC36AF531A77CD43089D /* OPOperationQueue.m */; };
-		E0DF246AD6299C6D065683D7D78891C7 /* OPBackgroundObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F6F3FD40E2CFE2191F96AB22BFE725 /* OPBackgroundObserver.m */; };
-		EC9703C99DC4FE3C923A963C7190BC51 /* OPAlertOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8C9B60628A667746F3E0BF2A898EB /* OPAlertOperation.m */; };
-		ED7001E4BFD8CDEEC42570A198A13300 /* OPReachabilityCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDB8F4B35C4592328F8ABF50EFFF848 /* OPReachabilityCondition.m */; };
-		F1DE5847924403A1B8AECAA54E77F35A /* OPLocationCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EAF2622C0584726051E4B88397D73A6 /* OPLocationCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2B0D59944AE4DA95A55BA46E269AC1F /* OPTimeoutObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C70F3BE03A18FA83CFD5F6654FD041 /* OPTimeoutObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F42E3D11EBCC1F1CF89FEAB407C68442 /* OPBlockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7263C9B40A67E2A844372A7B8C4B77 /* OPBlockObserver.m */; };
-		F5167ADBB2335B67ABCD21D1A01FE88E /* OPBackgroundObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 317B67386DAD0D2150DBA35747E8FED2 /* OPBackgroundObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA5A000AC1E6E0DE0BFD50E320BB64F6 /* OPExclusivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18D3B0B2B839CD647CF7E5FD83381B /* OPExclusivityController.m */; };
-		FE306F1B7A4384AAD07E8333BBC4CB3B /* Operative-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 585D8FFCD5A791EB6072E34FDE6362CE /* Operative-dummy.m */; };
+		7A266A5606EBF2FA5DF1640588B2CD9B /* Operative.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FA34CA5B008E2C4E6E3E813AF1E01F /* Operative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AA68DF0D578FD4C7009154760DBDD7A /* OPMediaPermissionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DE20FD9982238B4CF3ED0810A3FBC1E2 /* OPMediaPermissionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BD30565E931692805C771E9FFF40DBB /* OPOperationConditionUserNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 63874B0E7407E82F5D4036F4BE31CA5F /* OPOperationConditionUserNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		855424C593AE954F2A861194D31FDD51 /* OPNoCancelledDependenciesCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CD946DA0B7235FE68D824A1C7D3F124 /* OPNoCancelledDependenciesCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8647E6C4B9CE6B791E468CD320C684FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F15F6B7457ECAED15F41149D90E8E4 /* UIKit.framework */; };
+		89EF5A76C81462E89FCF553A225BB0BF /* OPGroupOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 67EA95FE22E188DB79A5EEDAF90EC646 /* OPGroupOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DC4B64B3490763F56A4F39BD54E24C6 /* OPRemoteNotificationCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C9EACD3AC658D49ED31CE0932A4622 /* OPRemoteNotificationCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9225172DE9EEACDB9C299A4355FF5FFF /* OPBackgroundObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A884FC96DB25B20FF6029D8C0B7B6B8 /* OPBackgroundObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		957404703482B0CC8F071DE824FC11C2 /* OPNegatedCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 062DD9ACD1DF7F38A08FE3CF07EAFD3B /* OPNegatedCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		958073053A136894F36CFD51AFA6C20D /* OPAlertOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B32BE3565AF8C50B4C873FE8B654D34 /* OPAlertOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98C00E418D97FC9EAAA8CE7F6162E526 /* OPBlockOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E2CCA1182BA3FCEA2270D2D6794A2D3C /* OPBlockOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F6CF31C0A798EB4801B883B23DD5508 /* OPURLSessionTaskOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0035B39B5D8EA3398DEF7DF6C09A48 /* OPURLSessionTaskOperation.m */; };
+		A63E0EA416004A1BD416282EF53776AD /* NSMutableDictionary+Operative.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D0BF32D7A8C4441BCAD8775BCF2ABC /* NSMutableDictionary+Operative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A71971047FFB282BCAD1F58835A49031 /* OPOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 106112AB24E9EDA14DEF7EBE1B15C140 /* OPOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7BF258F31425BA031F237EAFACFBFC9 /* OPOperationConditionEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9234FE14510205C8CDB22CBEEEC613B9 /* OPOperationConditionEvaluator.m */; };
+		AE687480A87CE2208AD2F271A417E7E8 /* OPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA056722F1C0F15BB8E793B3A3111C1 /* OPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B886E49CC98B8CA311B72EBF97A7FA51 /* OPRemoteNotificationCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 23011DA9F21E3C37CE695A7898127592 /* OPRemoteNotificationCondition.m */; };
+		BC04EEC37EE69081903C8D67B2E32D1A /* UIUserNotificationSettings+Operative.m in Sources */ = {isa = PBXBuildFile; fileRef = 3308D5D7E22F18F207E35666495BBD6B /* UIUserNotificationSettings+Operative.m */; };
+		BCB9696257C1B4335C4635518A23D433 /* OPOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D561CA2DDA016D63AF3553E7F926EA7D /* OPOperationQueue.m */; };
+		BE117D307EF4A047BC7371644EB40EBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F866EA2B7D47D920CF64B0E05B695896 /* Foundation.framework */; };
+		C0A624B6669B378C91CA8F9B63CD1AB5 /* OPDelayOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F4545F034F89FDA48CB1D3ED25407 /* OPDelayOperation.m */; };
+		C6D78895A302602D5E48A7C97BC5D500 /* OPNoCancelledDependenciesCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = C4387F987EF29621FEDF06A6EC2683D6 /* OPNoCancelledDependenciesCondition.m */; };
+		C6EC695746A158B8A9D76EA7807CB652 /* OPAudioCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFB8C7171C1921C12AD5ADF74F51F9D /* OPAudioCondition.m */; };
+		CCEFE556277AE49D5F3712B0B63C38D0 /* OPContactsPermissionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F9EBDE0E1F7A2A2E008D054C06EEFF /* OPContactsPermissionOperation.m */; };
+		CD4E035735A84DD77095FF5261F523F8 /* OPVideoCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ECC059E133F92E2A3EE0E8EBD4B8AF /* OPVideoCondition.m */; };
+		CFACAB12B8B4DA0E3F6FEAE757AAF79A /* NSError+Operative.m in Sources */ = {isa = PBXBuildFile; fileRef = B257D521E6AE56E841698B5D93E7E9A1 /* NSError+Operative.m */; };
+		D03E0B9A2A763A9113683F1562A3FB09 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E770E649A751F6E16D0553FA719AEE0 /* AVFoundation.framework */; };
+		D05BD04C812E8D26A9CDEEDD22F75386 /* OPOperationConditionEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = 98BCEF5BF937430603540ADC8F4CCD06 /* OPOperationConditionEvaluator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA761FBB3D5BFBF7E9DD98E34195B7DE /* OPMediaPermissionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7255565F93606B24114E33BA33B5F8B7 /* OPMediaPermissionOperation.m */; };
+		E17A983828CE2F35F0D5E5CA617A7D8F /* OPNegatedCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 406E3569851A93320FCD812F0FD9CA14 /* OPNegatedCondition.m */; };
+		E24B8A73C928CFB62A915AA08010E2A6 /* OPReachabilityCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A74BAF3C06805438DFE3D8C06E2C2 /* OPReachabilityCondition.m */; };
+		E7CC9001216714C68995ACC6329906F4 /* UIUserNotificationSettings+Operative.h in Headers */ = {isa = PBXBuildFile; fileRef = 543923E3D1CDE70B5D2D76745971E8BD /* UIUserNotificationSettings+Operative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE928CEB7FFF8FABD674425ACF263A36 /* OPBackgroundObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CCA40A4199B41809042A7A91717439 /* OPBackgroundObserver.m */; };
+		F5EEA0D9D94AB75DC7B9E902FD10C690 /* OPAlertOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F33B1FE9FA52C4F317C17FE0A40ED5 /* OPAlertOperation.m */; };
+		FBA6491560CBEC74740FC903E8072E83 /* OPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D9928DE5EE8D307E62139155A3C943DF /* OPOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		92622E4E7E20DB04D2194F0111B5B52E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC9CB571EF25C5DA3D6607CA0E3F074B;
-			remoteInfo = "Operative-Operative";
-		};
 		93E656DEAF5CDDCE0E670C14D43916DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 743A106E67C07A20C6D04625EBA72D43;
+			remoteGlobalIDString = DE00356AC14B1CAD4D98226EAAD5FF81;
 			remoteInfo = Operative;
 		};
 		F2567E329321F1AA615BBFE9426FFF65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 743A106E67C07A20C6D04625EBA72D43;
+			remoteGlobalIDString = DE00356AC14B1CAD4D98226EAAD5FF81;
 			remoteInfo = Operative;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		014329DC5F12EF4CD0DB930AF38CE150 /* OPTimeoutObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPTimeoutObserver.m; sourceTree = "<group>"; };
-		05B00EBF12D9AF74C733883F554BDE8A /* NSError+Operative.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSError+Operative.m"; sourceTree = "<group>"; };
+		00B57A2722F1098A960CEE1FF8A113ED /* OPOperationConditionMutuallyExclusive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPOperationConditionMutuallyExclusive.m; sourceTree = "<group>"; };
+		062DD9ACD1DF7F38A08FE3CF07EAFD3B /* OPNegatedCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPNegatedCondition.h; sourceTree = "<group>"; };
+		0C1F0190B4EFEC34675F5A091E316655 /* OPLocationOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPLocationOperation.m; sourceTree = "<group>"; };
+		1007488856B3E3D3E356E779A93173C2 /* NSOperation+Operative.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSOperation+Operative.m"; sourceTree = "<group>"; };
 		101B35983DE6E7FA9F0629FDB2D21BE2 /* Pods-Operative_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Operative_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		10EA5CB738CC43FAEBA1E5CC8DFCED2E /* libPods-Operative_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Operative_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		106112AB24E9EDA14DEF7EBE1B15C140 /* OPOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperationQueue.h; sourceTree = "<group>"; };
+		10D979F0115C1C6B698D02838708BF3D /* OPOperationConditionUserNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPOperationConditionUserNotification.m; sourceTree = "<group>"; };
 		12611C8890F5C7AB27E826602B1F87C5 /* Operative.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Operative.xcconfig; sourceTree = "<group>"; };
 		14638AD6C360D029AFF1CEFD6C7DAC7C /* Pods-Operative_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Operative_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1692462555D51EB845E0D71B86949DFA /* Pods-Operative_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Operative_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1AB117E1AEEB5B0EC7A5B1EE37C2F7A3 /* OPPhotosCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPPhotosCondition.h; sourceTree = "<group>"; };
-		1B345F786E9199A71998DFF060E0B798 /* OPBlockOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPBlockOperation.m; sourceTree = "<group>"; };
-		1E33581721F70535F0C854C4FCDE35AB /* OPOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperation.h; sourceTree = "<group>"; };
-		2C1C784B45B0166AB4B33B9843A23CB9 /* OPLocationCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPLocationCondition.m; sourceTree = "<group>"; };
-		2F45594178E911C502EC6B4E8AF63F59 /* OPRemoteNotificationCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPRemoteNotificationCondition.h; sourceTree = "<group>"; };
-		30B8E706777FD55A02D9F0F3F809DE89 /* OPOperationObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperationObserver.h; sourceTree = "<group>"; };
-		317B67386DAD0D2150DBA35747E8FED2 /* OPBackgroundObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPBackgroundObserver.h; sourceTree = "<group>"; };
-		31E20C940DFD7E0AC35D09C78EF33A01 /* UIUserNotificationSettings+Operative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIUserNotificationSettings+Operative.h"; sourceTree = "<group>"; };
-		35381F28B8FA35B9548A55EB4812877D /* OPURLSessionTaskOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPURLSessionTaskOperation.m; sourceTree = "<group>"; };
+		1C7718CA66DA6D5432161FF2B3135F96 /* OPOperationConditionMutuallyExclusive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperationConditionMutuallyExclusive.h; sourceTree = "<group>"; };
+		1E86DBE549EB423FEB28D3FFBCC5A1E9 /* OPGroupOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPGroupOperation.m; sourceTree = "<group>"; };
+		228E36E0BE02CA935FAD66A46A9730F4 /* OPSilentCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPSilentCondition.h; sourceTree = "<group>"; };
+		23011DA9F21E3C37CE695A7898127592 /* OPRemoteNotificationCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPRemoteNotificationCondition.m; sourceTree = "<group>"; };
+		27E4653F73126A12ACF3184F3E616515 /* OPContactsCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPContactsCondition.h; sourceTree = "<group>"; };
+		2953BD32EED85EC412CF5E34DC8BB88F /* OPNetworkObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPNetworkObserver.h; sourceTree = "<group>"; };
+		2A884FC96DB25B20FF6029D8C0B7B6B8 /* OPBackgroundObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPBackgroundObserver.h; sourceTree = "<group>"; };
+		2B7996E41E14D15DC9B061CEB81201F3 /* OPTimeoutObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPTimeoutObserver.m; sourceTree = "<group>"; };
+		2C1675C9ECB73DCB38F21195824C75CC /* NSOperation+Operative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSOperation+Operative.h"; sourceTree = "<group>"; };
+		3308D5D7E22F18F207E35666495BBD6B /* UIUserNotificationSettings+Operative.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIUserNotificationSettings+Operative.m"; sourceTree = "<group>"; };
+		38CCA40A4199B41809042A7A91717439 /* OPBackgroundObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPBackgroundObserver.m; sourceTree = "<group>"; };
+		3B8A74BAF3C06805438DFE3D8C06E2C2 /* OPReachabilityCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPReachabilityCondition.m; sourceTree = "<group>"; };
 		3C8826E6F048EA03792014A4189EBFEE /* Pods-Operative_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Operative_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3ED66214C350B892A359C94798ADB89A /* Pods-Operative_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Operative_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4351F61FA84C87BE4CC637BC4972D960 /* OPSilentCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPSilentCondition.h; sourceTree = "<group>"; };
-		455C709EF72B7CC5F4C2BFCEE8BE4FD9 /* NSMutableDictionary+Operative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Operative.h"; sourceTree = "<group>"; };
+		406E3569851A93320FCD812F0FD9CA14 /* OPNegatedCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPNegatedCondition.m; sourceTree = "<group>"; };
+		45F9EBDE0E1F7A2A2E008D054C06EEFF /* OPContactsPermissionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPContactsPermissionOperation.m; sourceTree = "<group>"; };
+		484E542D2B35B024632572D8F3145AEE /* OPTimeoutObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPTimeoutObserver.h; sourceTree = "<group>"; };
+		4B32BE3565AF8C50B4C873FE8B654D34 /* OPAlertOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPAlertOperation.h; sourceTree = "<group>"; };
 		4EE9D8040D6C085A67BB414133683646 /* Pods-Operative_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Operative_Tests-resources.sh"; sourceTree = "<group>"; };
-		564DFF7C53495B3F8B50FAB563522914 /* NSOperation+Operative.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSOperation+Operative.m"; sourceTree = "<group>"; };
+		52F092588E3C70A0DFE4F62FB828D64D /* libOperative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOperative.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		543923E3D1CDE70B5D2D76745971E8BD /* UIUserNotificationSettings+Operative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIUserNotificationSettings+Operative.h"; sourceTree = "<group>"; };
+		554D01E07EE28884E4FB582BCB6335B0 /* OPOperationCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperationCondition.h; sourceTree = "<group>"; };
 		571D1F76107480CA8260827B9C067918 /* Pods-Operative_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Operative_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		58182A289D6377CA71FCE4B7957E6FC5 /* OPOperationConditionUserNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperationConditionUserNotification.h; sourceTree = "<group>"; };
 		585D8FFCD5A791EB6072E34FDE6362CE /* Operative-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Operative-dummy.m"; sourceTree = "<group>"; };
+		61B247F0215C6F26B1A35E2A1A4071F2 /* OPExclusivityController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPExclusivityController.m; sourceTree = "<group>"; };
+		63874B0E7407E82F5D4036F4BE31CA5F /* OPOperationConditionUserNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperationConditionUserNotification.h; sourceTree = "<group>"; };
+		67EA95FE22E188DB79A5EEDAF90EC646 /* OPGroupOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPGroupOperation.h; sourceTree = "<group>"; };
 		6807AC57C3114E53C75BD57CC812088E /* Pods-Operative_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Operative_Example-resources.sh"; sourceTree = "<group>"; };
-		6B633241B8E583792DFDAD1ABFC12E1F /* OPNegatedCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPNegatedCondition.h; sourceTree = "<group>"; };
-		6BCB38C87A66943B1B84FFE802A856A1 /* OPNetworkObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPNetworkObserver.m; sourceTree = "<group>"; };
-		6DAF52603736234A37CB641F3DC25C19 /* OPOperationConditionEvaluator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperationConditionEvaluator.h; sourceTree = "<group>"; };
+		6BE6E889BC04C5504B9CCFB589B649F6 /* OPDelayOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPDelayOperation.h; sourceTree = "<group>"; };
 		715BC572507568C05A6F21A16C6AEA27 /* Pods-Operative_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Operative_Tests-dummy.m"; sourceTree = "<group>"; };
+		7255565F93606B24114E33BA33B5F8B7 /* OPMediaPermissionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPMediaPermissionOperation.m; sourceTree = "<group>"; };
 		732F162F8698C260DC1837E561746490 /* Operative-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Operative-prefix.pch"; sourceTree = "<group>"; };
-		764687D1BE0D3BA18094B70BC0464EC7 /* OPExclusivityController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPExclusivityController.h; sourceTree = "<group>"; };
-		76C70F3BE03A18FA83CFD5F6654FD041 /* OPTimeoutObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPTimeoutObserver.h; sourceTree = "<group>"; };
-		793504B8AECACCE1B886613C8AA2EED8 /* OPOperationConditionMutuallyExclusive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperationConditionMutuallyExclusive.h; sourceTree = "<group>"; };
-		7FEFE3EBC9BBC37FAE5CFA2B49017930 /* Operative.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Operative.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		80A00A5337C83DA9385E50DA5FD85476 /* NSMutableDictionary+Operative.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Operative.m"; sourceTree = "<group>"; };
+		73B10242854016E7404CDA4E73CD0A59 /* OPBlockObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPBlockObserver.m; sourceTree = "<group>"; };
+		79893D485C37E22107E1477BFE0BCD89 /* OPBlockObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPBlockObserver.h; sourceTree = "<group>"; };
+		811AB8A8F77F02D027A077C549CA50E2 /* OPURLSessionTaskOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPURLSessionTaskOperation.h; sourceTree = "<group>"; };
 		82F4BB531017DA7B357507130E23A842 /* Pods-Operative_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Operative_Example-frameworks.sh"; sourceTree = "<group>"; };
-		8C3B0BFB5DD42A5680259493960BE00E /* Operative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Operative.h; sourceTree = "<group>"; };
-		8E96ACCA651E7176A14121C7A27B76BB /* OPBlockOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPBlockOperation.h; sourceTree = "<group>"; };
-		8EAF2622C0584726051E4B88397D73A6 /* OPLocationCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPLocationCondition.h; sourceTree = "<group>"; };
-		8F42575F2F5190ABF2DBE1418607F8DF /* libPods-Operative_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Operative_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FFE8A130DB24F3C5F1716E8C8723FB7 /* OPNetworkObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPNetworkObserver.h; sourceTree = "<group>"; };
-		90676EA9C372767AD22FDE8E80E54B52 /* OPDelayOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPDelayOperation.h; sourceTree = "<group>"; };
-		90E00DD8B797C36FDB930DEFDE0FC7FF /* OPAlertOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPAlertOperation.h; sourceTree = "<group>"; };
-		94059B1A8C4C7A738B1877325477EC4E /* OPURLSessionTaskOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPURLSessionTaskOperation.h; sourceTree = "<group>"; };
-		964A6A9EE3B03200D7E805454EA9ED8B /* OPOperationConditionEvaluator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPOperationConditionEvaluator.m; sourceTree = "<group>"; };
-		97851D7216D459C882EA69FDE6F8798E /* OPOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPOperation.m; sourceTree = "<group>"; };
-		978EAFC809ACB7443BF5CD6CCC4B7392 /* OPDelayOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPDelayOperation.m; sourceTree = "<group>"; };
-		98C79D7FA701EA22D08EA4F87485B0D7 /* OPGroupOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPGroupOperation.h; sourceTree = "<group>"; };
-		99AACB64FB6AE1AEF8A26FBD64581211 /* OPOperationConditionMutuallyExclusive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPOperationConditionMutuallyExclusive.m; sourceTree = "<group>"; };
+		8C472C2FE53D0A4F965B6BA4B177AD0A /* libPods-Operative_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Operative_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD946DA0B7235FE68D824A1C7D3F124 /* OPNoCancelledDependenciesCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPNoCancelledDependenciesCondition.h; sourceTree = "<group>"; };
+		8DFB8C7171C1921C12AD5ADF74F51F9D /* OPAudioCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPAudioCondition.m; sourceTree = "<group>"; };
+		8E770E649A751F6E16D0553FA719AEE0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		9135634D79514563C4C26AB6552C9FE9 /* OPLocationCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPLocationCondition.h; sourceTree = "<group>"; };
+		91C9EACD3AC658D49ED31CE0932A4622 /* OPRemoteNotificationCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPRemoteNotificationCondition.h; sourceTree = "<group>"; };
+		9234FE14510205C8CDB22CBEEEC613B9 /* OPOperationConditionEvaluator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPOperationConditionEvaluator.m; sourceTree = "<group>"; };
+		961939C85C68B14A211BC21604CB60E5 /* OPLocationOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPLocationOperation.h; sourceTree = "<group>"; };
+		98BCEF5BF937430603540ADC8F4CCD06 /* OPOperationConditionEvaluator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperationConditionEvaluator.h; sourceTree = "<group>"; };
+		9AB362F5269EFDDD65372E123DBC60FA /* OPReachabilityCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPReachabilityCondition.h; sourceTree = "<group>"; };
 		9B1710821E156010922FA472B461834B /* Pods-Operative_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Operative_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9B7BEF691997407F8767572BE1471D45 /* OPPhotosCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPPhotosCondition.m; sourceTree = "<group>"; };
-		9C91AD89C6F4F46A50E5441237D47A16 /* OPOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperationQueue.h; sourceTree = "<group>"; };
-		9D1951CCEC81F33ED473BC98EC8B2F1B /* OPReachabilityCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPReachabilityCondition.h; sourceTree = "<group>"; };
+		9C5F4545F034F89FDA48CB1D3ED25407 /* OPDelayOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPDelayOperation.m; sourceTree = "<group>"; };
 		A06F13982E741D9963F2C0D7CF3B2EE2 /* Pods-Operative_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Operative_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A20E74E0A8316A51BD185D36C0E6E641 /* OPSilentCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPSilentCondition.m; sourceTree = "<group>"; };
-		A4F6F3FD40E2CFE2191F96AB22BFE725 /* OPBackgroundObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPBackgroundObserver.m; sourceTree = "<group>"; };
-		A791C34C813A73B8D77ED9EA8E113AAD /* NSError+Operative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+Operative.h"; sourceTree = "<group>"; };
-		AE18D3B0B2B839CD647CF7E5FD83381B /* OPExclusivityController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPExclusivityController.m; sourceTree = "<group>"; };
-		B0B8C9B60628A667746F3E0BF2A898EB /* OPAlertOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPAlertOperation.m; sourceTree = "<group>"; };
-		B1C79C34ABE247425908E04EEBF344AF /* OPRemoteNotificationCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPRemoteNotificationCondition.m; sourceTree = "<group>"; };
-		B4411B7ED951E7B15D1CBF134F27FE8B /* OPLocationOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPLocationOperation.h; sourceTree = "<group>"; };
-		B954FBD28A80EA269DF58C7374DDD1DC /* OPNoCancelledDependenciesCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPNoCancelledDependenciesCondition.m; sourceTree = "<group>"; };
+		AA877B42B8E1CB12E8E72FAB1B5ED88A /* OPLocationCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPLocationCondition.m; sourceTree = "<group>"; };
+		AFA056722F1C0F15BB8E793B3A3111C1 /* OPOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperation.h; sourceTree = "<group>"; };
+		B0434D71B894F7E567C42110097A9C23 /* OPOperationObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperationObserver.h; sourceTree = "<group>"; };
+		B257D521E6AE56E841698B5D93E7E9A1 /* NSError+Operative.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSError+Operative.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BAC5C9A060B5780340EC58EC2B955E86 /* NSOperation+Operative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSOperation+Operative.h"; sourceTree = "<group>"; };
-		C1146C5E59559ED6A188318CF28B9DFE /* OPOperationCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPOperationCondition.h; sourceTree = "<group>"; };
-		C256DCA7F3E7824482983BF1F88E28EB /* UIUserNotificationSettings+Operative.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIUserNotificationSettings+Operative.m"; sourceTree = "<group>"; };
-		C5F2636342C592A1604AACD3EF02F952 /* OPGroupOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPGroupOperation.m; sourceTree = "<group>"; };
-		CBDB8F4B35C4592328F8ABF50EFFF848 /* OPReachabilityCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPReachabilityCondition.m; sourceTree = "<group>"; };
-		CF61F1C242844B8B7A4EFC560B377ABC /* OPBlockObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPBlockObserver.h; sourceTree = "<group>"; };
+		C4387F987EF29621FEDF06A6EC2683D6 /* OPNoCancelledDependenciesCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPNoCancelledDependenciesCondition.m; sourceTree = "<group>"; };
+		C691D0AE021E7CE4D71459E470114160 /* libPods-Operative_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Operative_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F4FB6FF4DF9637A4BD9BE85E49F77D /* OPSilentCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPSilentCondition.m; sourceTree = "<group>"; };
 		D426287A7B65B531DFA39EF9D1B24C21 /* Pods-Operative_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Operative_Example-dummy.m"; sourceTree = "<group>"; };
-		DA2FA5401889EA61D929CC9434659CD1 /* OPNegatedCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPNegatedCondition.m; sourceTree = "<group>"; };
-		DB7263C9B40A67E2A844372A7B8C4B77 /* OPBlockObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPBlockObserver.m; sourceTree = "<group>"; };
-		E43FCF309E16BC36AF531A77CD43089D /* OPOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPOperationQueue.m; sourceTree = "<group>"; };
+		D561CA2DDA016D63AF3553E7F926EA7D /* OPOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPOperationQueue.m; sourceTree = "<group>"; };
+		D5FA34CA5B008E2C4E6E3E813AF1E01F /* Operative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Operative.h; sourceTree = "<group>"; };
+		D6F15F6B7457ECAED15F41149D90E8E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D83790ACCE53B6E1C1CE3EF979A5FE12 /* NSError+Operative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+Operative.h"; sourceTree = "<group>"; };
+		D9928DE5EE8D307E62139155A3C943DF /* OPOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPOperation.m; sourceTree = "<group>"; };
+		DB0035B39B5D8EA3398DEF7DF6C09A48 /* OPURLSessionTaskOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPURLSessionTaskOperation.m; sourceTree = "<group>"; };
+		DC4C095C4EC5102463679D0161D7DA21 /* OPBlockOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPBlockOperation.m; sourceTree = "<group>"; };
+		DD4662CE08117F475B34342BDBA508E1 /* OPExclusivityController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPExclusivityController.h; sourceTree = "<group>"; };
+		DE20FD9982238B4CF3ED0810A3FBC1E2 /* OPMediaPermissionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPMediaPermissionOperation.h; sourceTree = "<group>"; };
+		E282F5D2425288E8EF810159E8495157 /* NSMutableDictionary+Operative.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Operative.m"; sourceTree = "<group>"; };
+		E2CCA1182BA3FCEA2270D2D6794A2D3C /* OPBlockOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPBlockOperation.h; sourceTree = "<group>"; };
+		E4D0BF32D7A8C4441BCAD8775BCF2ABC /* NSMutableDictionary+Operative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Operative.h"; sourceTree = "<group>"; };
 		E4FD07D0CBFE35EE357DB220A16E9644 /* Pods-Operative_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Operative_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		EA0A5ED9318B4393277DCC7CBEB2C1F4 /* OPOperationConditionUserNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPOperationConditionUserNotification.m; sourceTree = "<group>"; };
-		EFC161C6335D2913AE15DA72749C17F9 /* libOperative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOperative.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F43DD6C16078AB1DFA44FFFCAFF5BE78 /* OPLocationOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPLocationOperation.m; sourceTree = "<group>"; };
-		F8E5A7E082E0D82E5E858C0E15EB0981 /* OPNoCancelledDependenciesCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPNoCancelledDependenciesCondition.h; sourceTree = "<group>"; };
+		E5ECC059E133F92E2A3EE0E8EBD4B8AF /* OPVideoCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPVideoCondition.m; sourceTree = "<group>"; };
+		E8F33B1FE9FA52C4F317C17FE0A40ED5 /* OPAlertOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPAlertOperation.m; sourceTree = "<group>"; };
+		EC9FC5FA685AE1AEB795DB53B0990335 /* OPContactsCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPContactsCondition.m; sourceTree = "<group>"; };
+		EEC948415662F31550B534658E469DA2 /* OPAudioCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPAudioCondition.h; sourceTree = "<group>"; };
+		F16DACDC5F7560D21B58CFDA9239BAA8 /* OPNetworkObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPNetworkObserver.m; sourceTree = "<group>"; };
+		F34DF67EDBFCC988C41931918D4A63FE /* OPPhotosCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPPhotosCondition.m; sourceTree = "<group>"; };
+		F362881F84EF465A9669B73AD4A0F5E2 /* OPVideoCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPVideoCondition.h; sourceTree = "<group>"; };
+		F5D95CF99AF851721AA69E69646DEA07 /* OPContactsPermissionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPContactsPermissionOperation.h; sourceTree = "<group>"; };
+		F808551A30F72042893820CBE6E83C8C /* OPPhotosCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPPhotosCondition.h; sourceTree = "<group>"; };
+		F866EA2B7D47D920CF64B0E05B695896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1795490B0A1BA0CB43B24254B910AD36 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E1CC21E92BCE0677304DD2DD7AE280F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		39ACCD83EC50056DDB5893148F78E692 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		87E89B2A807486A511BFE6935076846F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,35 +212,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D88D03C6334C788684365D0EEE396A91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03E0B9A2A763A9113683F1562A3FB09 /* AVFoundation.framework in Frameworks */,
+				4AF07074F7D1B6FDC1A7C0C8360596EF /* Foundation.framework in Frameworks */,
+				8647E6C4B9CE6B791E468CD320C684FA /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		083ADE5A827A832A3E47728A2F02B716 /* Conditions */ = {
+		0447AE04DBBD09BCC509980F7D136BF1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				8EAF2622C0584726051E4B88397D73A6 /* OPLocationCondition.h */,
-				2C1C784B45B0166AB4B33B9843A23CB9 /* OPLocationCondition.m */,
-				6B633241B8E583792DFDAD1ABFC12E1F /* OPNegatedCondition.h */,
-				DA2FA5401889EA61D929CC9434659CD1 /* OPNegatedCondition.m */,
-				F8E5A7E082E0D82E5E858C0E15EB0981 /* OPNoCancelledDependenciesCondition.h */,
-				B954FBD28A80EA269DF58C7374DDD1DC /* OPNoCancelledDependenciesCondition.m */,
-				C1146C5E59559ED6A188318CF28B9DFE /* OPOperationCondition.h */,
-				6DAF52603736234A37CB641F3DC25C19 /* OPOperationConditionEvaluator.h */,
-				964A6A9EE3B03200D7E805454EA9ED8B /* OPOperationConditionEvaluator.m */,
-				793504B8AECACCE1B886613C8AA2EED8 /* OPOperationConditionMutuallyExclusive.h */,
-				99AACB64FB6AE1AEF8A26FBD64581211 /* OPOperationConditionMutuallyExclusive.m */,
-				58182A289D6377CA71FCE4B7957E6FC5 /* OPOperationConditionUserNotification.h */,
-				EA0A5ED9318B4393277DCC7CBEB2C1F4 /* OPOperationConditionUserNotification.m */,
-				1AB117E1AEEB5B0EC7A5B1EE37C2F7A3 /* OPPhotosCondition.h */,
-				9B7BEF691997407F8767572BE1471D45 /* OPPhotosCondition.m */,
-				9D1951CCEC81F33ED473BC98EC8B2F1B /* OPReachabilityCondition.h */,
-				CBDB8F4B35C4592328F8ABF50EFFF848 /* OPReachabilityCondition.m */,
-				2F45594178E911C502EC6B4E8AF63F59 /* OPRemoteNotificationCondition.h */,
-				B1C79C34ABE247425908E04EEBF344AF /* OPRemoteNotificationCondition.m */,
-				4351F61FA84C87BE4CC637BC4972D960 /* OPSilentCondition.h */,
-				A20E74E0A8316A51BD185D36C0E6E641 /* OPSilentCondition.m */,
+				45AAC9F56FB83B0B40AB6D81197D196E /* Categories */,
+				403DAAC8FB315B2D1D2BED77E60DD68F /* Conditions */,
+				9BDF08D21113892CC365AB2CD51F2F55 /* Observers */,
+				1800A1B6C473FE0ED158A6E7F8904F0E /* Operations */,
 			);
-			path = Conditions;
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81DAA33EADCA88F32FDF1FE615DF6816 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17E27B1B97324748AE22E3120627C549 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D83790ACCE53B6E1C1CE3EF979A5FE12 /* NSError+Operative.h */,
+				B257D521E6AE56E841698B5D93E7E9A1 /* NSError+Operative.m */,
+				E4D0BF32D7A8C4441BCAD8775BCF2ABC /* NSMutableDictionary+Operative.h */,
+				E282F5D2425288E8EF810159E8495157 /* NSMutableDictionary+Operative.m */,
+				2C1675C9ECB73DCB38F21195824C75CC /* NSOperation+Operative.h */,
+				1007488856B3E3D3E356E779A93173C2 /* NSOperation+Operative.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		1800A1B6C473FE0ED158A6E7F8904F0E /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				FA1D0B95F55B6E32EBD3B370C4C9BAB5 /* Misc */,
+				8202256752E79155A61758E531528DA9 /* UI */,
+			);
+			path = Operations;
 			sourceTree = "<group>";
 		};
 		2F54DFF125CC01210C8DBC239ED3C725 /* Targets Support Files */ = {
@@ -251,58 +275,87 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		46F78C7B3AD7D18E36E4745F5DB604F8 /* Classes */ = {
+		35ABAF5E633FBAF2B8C4998B440ACCF0 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
-				8C3B0BFB5DD42A5680259493960BE00E /* Operative.h */,
-				AC62FC3AE5570E65D8591846398AEBA2 /* Categories */,
-				083ADE5A827A832A3E47728A2F02B716 /* Conditions */,
-				676A9418E5880CA8BD81569460C0D9C0 /* Observers */,
-				EFA2CB80F456407C2BB731D7A5A9BCF6 /* Operation Queue */,
-				F03B32113AFABF959DA839E041F61A4F /* Operations */,
+				AFA056722F1C0F15BB8E793B3A3111C1 /* OPOperation.h */,
+				D9928DE5EE8D307E62139155A3C943DF /* OPOperation.m */,
+				700B59E2307C3864C81C3A9B31183940 /* Misc */,
+				DA0597E22748962BE8C1D22D157346EC /* Networking */,
 			);
-			path = Classes;
+			path = Operations;
 			sourceTree = "<group>";
 		};
-		529181EA445863BE52517EBC8EFB4E91 /* Misc */ = {
+		363947159438E9862F35A3F088394783 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				8E96ACCA651E7176A14121C7A27B76BB /* OPBlockOperation.h */,
-				1B345F786E9199A71998DFF060E0B798 /* OPBlockOperation.m */,
-				90676EA9C372767AD22FDE8E80E54B52 /* OPDelayOperation.h */,
-				978EAFC809ACB7443BF5CD6CCC4B7392 /* OPDelayOperation.m */,
-				98C79D7FA701EA22D08EA4F87485B0D7 /* OPGroupOperation.h */,
-				C5F2636342C592A1604AACD3EF02F952 /* OPGroupOperation.m */,
-				B4411B7ED951E7B15D1CBF134F27FE8B /* OPLocationOperation.h */,
-				F43DD6C16078AB1DFA44FFFCAFF5BE78 /* OPLocationOperation.m */,
+				E6B837F39E37E878F87F606C39923E35 /* Classes */,
 			);
-			path = Misc;
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		403DAAC8FB315B2D1D2BED77E60DD68F /* Conditions */ = {
+			isa = PBXGroup;
+			children = (
+				EEC948415662F31550B534658E469DA2 /* OPAudioCondition.h */,
+				8DFB8C7171C1921C12AD5ADF74F51F9D /* OPAudioCondition.m */,
+				9135634D79514563C4C26AB6552C9FE9 /* OPLocationCondition.h */,
+				AA877B42B8E1CB12E8E72FAB1B5ED88A /* OPLocationCondition.m */,
+				63874B0E7407E82F5D4036F4BE31CA5F /* OPOperationConditionUserNotification.h */,
+				10D979F0115C1C6B698D02838708BF3D /* OPOperationConditionUserNotification.m */,
+				F808551A30F72042893820CBE6E83C8C /* OPPhotosCondition.h */,
+				F34DF67EDBFCC988C41931918D4A63FE /* OPPhotosCondition.m */,
+				91C9EACD3AC658D49ED31CE0932A4622 /* OPRemoteNotificationCondition.h */,
+				23011DA9F21E3C37CE695A7898127592 /* OPRemoteNotificationCondition.m */,
+				F362881F84EF465A9669B73AD4A0F5E2 /* OPVideoCondition.h */,
+				E5ECC059E133F92E2A3EE0E8EBD4B8AF /* OPVideoCondition.m */,
+			);
+			path = Conditions;
+			sourceTree = "<group>";
+		};
+		45AAC9F56FB83B0B40AB6D81197D196E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				543923E3D1CDE70B5D2D76745971E8BD /* UIUserNotificationSettings+Operative.h */,
+				3308D5D7E22F18F207E35666495BBD6B /* UIUserNotificationSettings+Operative.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5A1122DA7565077D984FD8CB77D7A767 /* Operation Queue */ = {
+			isa = PBXGroup;
+			children = (
+				DD4662CE08117F475B34342BDBA508E1 /* OPExclusivityController.h */,
+				61B247F0215C6F26B1A35E2A1A4071F2 /* OPExclusivityController.m */,
+				106112AB24E9EDA14DEF7EBE1B15C140 /* OPOperationQueue.h */,
+				D561CA2DDA016D63AF3553E7F926EA7D /* OPOperationQueue.m */,
+			);
+			path = "Operation Queue";
 			sourceTree = "<group>";
 		};
 		5EA4E9C890F1B21E8D468F740D0626C6 /* Operative */ = {
 			isa = PBXGroup;
 			children = (
-				877832EDCA373B0D133C975842AB7194 /* Pod */,
+				363947159438E9862F35A3F088394783 /* Pod */,
 				781D618FA4F9AA0CB9CC61837EC68E23 /* Support Files */,
 			);
 			name = Operative;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		676A9418E5880CA8BD81569460C0D9C0 /* Observers */ = {
+		700B59E2307C3864C81C3A9B31183940 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				317B67386DAD0D2150DBA35747E8FED2 /* OPBackgroundObserver.h */,
-				A4F6F3FD40E2CFE2191F96AB22BFE725 /* OPBackgroundObserver.m */,
-				CF61F1C242844B8B7A4EFC560B377ABC /* OPBlockObserver.h */,
-				DB7263C9B40A67E2A844372A7B8C4B77 /* OPBlockObserver.m */,
-				8FFE8A130DB24F3C5F1716E8C8723FB7 /* OPNetworkObserver.h */,
-				6BCB38C87A66943B1B84FFE802A856A1 /* OPNetworkObserver.m */,
-				30B8E706777FD55A02D9F0F3F809DE89 /* OPOperationObserver.h */,
-				76C70F3BE03A18FA83CFD5F6654FD041 /* OPTimeoutObserver.h */,
-				014329DC5F12EF4CD0DB930AF38CE150 /* OPTimeoutObserver.m */,
+				E2CCA1182BA3FCEA2270D2D6794A2D3C /* OPBlockOperation.h */,
+				DC4C095C4EC5102463679D0161D7DA21 /* OPBlockOperation.m */,
+				F5D95CF99AF851721AA69E69646DEA07 /* OPContactsPermissionOperation.h */,
+				45F9EBDE0E1F7A2A2E008D054C06EEFF /* OPContactsPermissionOperation.m */,
+				6BE6E889BC04C5504B9CCFB589B649F6 /* OPDelayOperation.h */,
+				9C5F4545F034F89FDA48CB1D3ED25407 /* OPDelayOperation.m */,
+				67EA95FE22E188DB79A5EEDAF90EC646 /* OPGroupOperation.h */,
+				1E86DBE549EB423FEB28D3FFBCC5A1E9 /* OPGroupOperation.m */,
 			);
-			path = Observers;
+			path = Misc;
 			sourceTree = "<group>";
 		};
 		781D618FA4F9AA0CB9CC61837EC68E23 /* Support Files */ = {
@@ -314,6 +367,38 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Operative";
+			sourceTree = "<group>";
+		};
+		786D74D107D95EB0C51090DBE032C510 /* Conditions */ = {
+			isa = PBXGroup;
+			children = (
+				27E4653F73126A12ACF3184F3E616515 /* OPContactsCondition.h */,
+				EC9FC5FA685AE1AEB795DB53B0990335 /* OPContactsCondition.m */,
+				062DD9ACD1DF7F38A08FE3CF07EAFD3B /* OPNegatedCondition.h */,
+				406E3569851A93320FCD812F0FD9CA14 /* OPNegatedCondition.m */,
+				8CD946DA0B7235FE68D824A1C7D3F124 /* OPNoCancelledDependenciesCondition.h */,
+				C4387F987EF29621FEDF06A6EC2683D6 /* OPNoCancelledDependenciesCondition.m */,
+				554D01E07EE28884E4FB582BCB6335B0 /* OPOperationCondition.h */,
+				98BCEF5BF937430603540ADC8F4CCD06 /* OPOperationConditionEvaluator.h */,
+				9234FE14510205C8CDB22CBEEEC613B9 /* OPOperationConditionEvaluator.m */,
+				1C7718CA66DA6D5432161FF2B3135F96 /* OPOperationConditionMutuallyExclusive.h */,
+				00B57A2722F1098A960CEE1FF8A113ED /* OPOperationConditionMutuallyExclusive.m */,
+				9AB362F5269EFDDD65372E123DBC60FA /* OPReachabilityCondition.h */,
+				3B8A74BAF3C06805438DFE3D8C06E2C2 /* OPReachabilityCondition.m */,
+				228E36E0BE02CA935FAD66A46A9730F4 /* OPSilentCondition.h */,
+				C6F4FB6FF4DF9637A4BD9BE85E49F77D /* OPSilentCondition.m */,
+			);
+			path = Conditions;
+			sourceTree = "<group>";
+		};
+		78F5F4ED7CF2EB68FD241B9B6D2A553A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52F092588E3C70A0DFE4F62FB828D64D /* libOperative.a */,
+				8C472C2FE53D0A4F965B6BA4B177AD0A /* libPods-Operative_Example.a */,
+				C691D0AE021E7CE4D71459E470114160 /* libPods-Operative_Tests.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7C15AC5FBE8C1688CDA2A23B2F0F0C02 /* Pods-Operative_Tests */ = {
@@ -336,101 +421,71 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				F2E30ABEB9377C8C6F20B1FEC379CC94 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C2DD90E4583DB689B5DE2375DEB35B96 /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				78F5F4ED7CF2EB68FD241B9B6D2A553A /* Products */,
 				2F54DFF125CC01210C8DBC239ED3C725 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		877832EDCA373B0D133C975842AB7194 /* Pod */ = {
+		81DAA33EADCA88F32FDF1FE615DF6816 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				46F78C7B3AD7D18E36E4745F5DB604F8 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		AC62FC3AE5570E65D8591846398AEBA2 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				A791C34C813A73B8D77ED9EA8E113AAD /* NSError+Operative.h */,
-				05B00EBF12D9AF74C733883F554BDE8A /* NSError+Operative.m */,
-				455C709EF72B7CC5F4C2BFCEE8BE4FD9 /* NSMutableDictionary+Operative.h */,
-				80A00A5337C83DA9385E50DA5FD85476 /* NSMutableDictionary+Operative.m */,
-				BAC5C9A060B5780340EC58EC2B955E86 /* NSOperation+Operative.h */,
-				564DFF7C53495B3F8B50FAB563522914 /* NSOperation+Operative.m */,
-				31E20C940DFD7E0AC35D09C78EF33A01 /* UIUserNotificationSettings+Operative.h */,
-				C256DCA7F3E7824482983BF1F88E28EB /* UIUserNotificationSettings+Operative.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		B9EA4215F608901CA1F045339AC2EBBC /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				90E00DD8B797C36FDB930DEFDE0FC7FF /* OPAlertOperation.h */,
-				B0B8C9B60628A667746F3E0BF2A898EB /* OPAlertOperation.m */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+				8E770E649A751F6E16D0553FA719AEE0 /* AVFoundation.framework */,
+				F866EA2B7D47D920CF64B0E05B695896 /* Foundation.framework */,
+				D6F15F6B7457ECAED15F41149D90E8E4 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C2DD90E4583DB689B5DE2375DEB35B96 /* Products */ = {
+		8202256752E79155A61758E531528DA9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				EFC161C6335D2913AE15DA72749C17F9 /* libOperative.a */,
-				8F42575F2F5190ABF2DBE1418607F8DF /* libPods-Operative_Example.a */,
-				10EA5CB738CC43FAEBA1E5CC8DFCED2E /* libPods-Operative_Tests.a */,
-				7FEFE3EBC9BBC37FAE5CFA2B49017930 /* Operative.bundle */,
+				4B32BE3565AF8C50B4C873FE8B654D34 /* OPAlertOperation.h */,
+				E8F33B1FE9FA52C4F317C17FE0A40ED5 /* OPAlertOperation.m */,
 			);
-			name = Products;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		C943F45C96CE1689FA591F03BA788A28 /* Networking */ = {
+		9BDF08D21113892CC365AB2CD51F2F55 /* Observers */ = {
 			isa = PBXGroup;
 			children = (
-				94059B1A8C4C7A738B1877325477EC4E /* OPURLSessionTaskOperation.h */,
-				35381F28B8FA35B9548A55EB4812877D /* OPURLSessionTaskOperation.m */,
+				2A884FC96DB25B20FF6029D8C0B7B6B8 /* OPBackgroundObserver.h */,
+				38CCA40A4199B41809042A7A91717439 /* OPBackgroundObserver.m */,
+				2953BD32EED85EC412CF5E34DC8BB88F /* OPNetworkObserver.h */,
+				F16DACDC5F7560D21B58CFDA9239BAA8 /* OPNetworkObserver.m */,
+			);
+			path = Observers;
+			sourceTree = "<group>";
+		};
+		DA0597E22748962BE8C1D22D157346EC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				811AB8A8F77F02D027A077C549CA50E2 /* OPURLSessionTaskOperation.h */,
+				DB0035B39B5D8EA3398DEF7DF6C09A48 /* OPURLSessionTaskOperation.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		EFA2CB80F456407C2BB731D7A5A9BCF6 /* Operation Queue */ = {
+		E6B837F39E37E878F87F606C39923E35 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				764687D1BE0D3BA18094B70BC0464EC7 /* OPExclusivityController.h */,
-				AE18D3B0B2B839CD647CF7E5FD83381B /* OPExclusivityController.m */,
-				9C91AD89C6F4F46A50E5441237D47A16 /* OPOperationQueue.h */,
-				E43FCF309E16BC36AF531A77CD43089D /* OPOperationQueue.m */,
+				D5FA34CA5B008E2C4E6E3E813AF1E01F /* Operative.h */,
+				E950975BF8E16A44D9E49AF8355F49E4 /* Core */,
+				0447AE04DBBD09BCC509980F7D136BF1 /* iOS */,
 			);
-			path = "Operation Queue";
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		F03B32113AFABF959DA839E041F61A4F /* Operations */ = {
+		E950975BF8E16A44D9E49AF8355F49E4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				1E33581721F70535F0C854C4FCDE35AB /* OPOperation.h */,
-				97851D7216D459C882EA69FDE6F8798E /* OPOperation.m */,
-				529181EA445863BE52517EBC8EFB4E91 /* Misc */,
-				C943F45C96CE1689FA591F03BA788A28 /* Networking */,
-				B9EA4215F608901CA1F045339AC2EBBC /* UI */,
+				17E27B1B97324748AE22E3120627C549 /* Categories */,
+				786D74D107D95EB0C51090DBE032C510 /* Conditions */,
+				FE593AD5052B475E9E1E9F85E22EDFB4 /* Observers */,
+				5A1122DA7565077D984FD8CB77D7A767 /* Operation Queue */,
+				35ABAF5E633FBAF2B8C4998B440ACCF0 /* Operations */,
 			);
-			path = Operations;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		F2E30ABEB9377C8C6F20B1FEC379CC94 /* Development Pods */ = {
@@ -439,6 +494,17 @@
 				5EA4E9C890F1B21E8D468F740D0626C6 /* Operative */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FA1D0B95F55B6E32EBD3B370C4C9BAB5 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				961939C85C68B14A211BC21604CB60E5 /* OPLocationOperation.h */,
+				0C1F0190B4EFEC34675F5A091E316655 /* OPLocationOperation.m */,
+				DE20FD9982238B4CF3ED0810A3FBC1E2 /* OPMediaPermissionOperation.h */,
+				7255565F93606B24114E33BA33B5F8B7 /* OPMediaPermissionOperation.m */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 		FDF9AAC19DEB75C8273DE74327D59A7D /* Pods-Operative_Example */ = {
@@ -456,43 +522,60 @@
 			path = "Target Support Files/Pods-Operative_Example";
 			sourceTree = "<group>";
 		};
+		FE593AD5052B475E9E1E9F85E22EDFB4 /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				79893D485C37E22107E1477BFE0BCD89 /* OPBlockObserver.h */,
+				73B10242854016E7404CDA4E73CD0A59 /* OPBlockObserver.m */,
+				B0434D71B894F7E567C42110097A9C23 /* OPOperationObserver.h */,
+				484E542D2B35B024632572D8F3145AEE /* OPTimeoutObserver.h */,
+				2B7996E41E14D15DC9B061CEB81201F3 /* OPTimeoutObserver.m */,
+			);
+			path = Observers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BBAABE4576EB3BDB5EA2E692CAC9CA41 /* Headers */ = {
+		40FA91731739DE24ADBC1267459B6070 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				729756B3C1038852E6CD79CCD7DED6B2 /* NSError+Operative.h in Headers */,
-				C3A9D6F4AD92FD2329A8795ED61BAD8B /* NSMutableDictionary+Operative.h in Headers */,
-				4B6AEA64C6D3B0FC23E23B278958F1E4 /* NSOperation+Operative.h in Headers */,
-				DEDBA378423E66665DD5678704FFC46B /* OPAlertOperation.h in Headers */,
-				F5167ADBB2335B67ABCD21D1A01FE88E /* OPBackgroundObserver.h in Headers */,
-				A9D4CB15D4EF6D4D3E8C41617DB3BE5E /* OPBlockObserver.h in Headers */,
-				B4AFBA7854FE6B27A31F6DB2E880C946 /* OPBlockOperation.h in Headers */,
-				5EC11B958F0CE613FCF04373B9DE22CE /* OPDelayOperation.h in Headers */,
-				AF737269674ACB79A5289DF994280F8C /* Operative.h in Headers */,
-				059E2B9B8FC1EB788BC573126639A7D4 /* OPExclusivityController.h in Headers */,
-				4FF24BFF92BE91B17B157B7A8C236A40 /* OPGroupOperation.h in Headers */,
-				F1DE5847924403A1B8AECAA54E77F35A /* OPLocationCondition.h in Headers */,
-				D1B15B4DB78A6B4B4FC2AE7E0FE31625 /* OPLocationOperation.h in Headers */,
-				72A7615E129BE998127353E0D43AB31E /* OPNegatedCondition.h in Headers */,
-				D985D2CC5B0EA84B76EFDCBA15B6EEDC /* OPNetworkObserver.h in Headers */,
-				571A2880DAB734C2EAF25ADDBA6A27D1 /* OPNoCancelledDependenciesCondition.h in Headers */,
-				8736736305CE8903FF3EDC46EC7E7A0A /* OPOperation.h in Headers */,
-				A7C33F3C09B558E2B56DE59012FD57EA /* OPOperationCondition.h in Headers */,
-				045F7BBC2963D1B80A5B281C6C22DD5C /* OPOperationConditionEvaluator.h in Headers */,
-				B2590D482B6CD8947149AE9B28B98D9C /* OPOperationConditionMutuallyExclusive.h in Headers */,
-				635BCCD7349D855E3C1B69CB1D286C73 /* OPOperationConditionUserNotification.h in Headers */,
-				5E23397C02F42F519C6DA3927BD89874 /* OPOperationObserver.h in Headers */,
-				190F72155F79913D6E99034656427B59 /* OPOperationQueue.h in Headers */,
-				3F6F06E081444C70FCBDCCA0EF89DEC5 /* OPPhotosCondition.h in Headers */,
-				7743C8AFE1009A94C5914BBD2F6382E9 /* OPReachabilityCondition.h in Headers */,
-				8CA8CC5B4232CA0E5ABC7F963FE3C708 /* OPRemoteNotificationCondition.h in Headers */,
-				20A8DC44139B139CE8E4731F21B1CA3C /* OPSilentCondition.h in Headers */,
-				F2B0D59944AE4DA95A55BA46E269AC1F /* OPTimeoutObserver.h in Headers */,
-				A0299F12AAC392BBC4AA0DD56A42301C /* OPURLSessionTaskOperation.h in Headers */,
-				73EC27AC14D66B148350C7C214CC44CB /* UIUserNotificationSettings+Operative.h in Headers */,
+				2F2F93604DD0732001EEDF54E81AEF6A /* NSError+Operative.h in Headers */,
+				A63E0EA416004A1BD416282EF53776AD /* NSMutableDictionary+Operative.h in Headers */,
+				131F0FE213FEBBB2A94A61E13D5064E2 /* NSOperation+Operative.h in Headers */,
+				958073053A136894F36CFD51AFA6C20D /* OPAlertOperation.h in Headers */,
+				47E5EE35C13A903AA5FB518FA245CA3D /* OPAudioCondition.h in Headers */,
+				9225172DE9EEACDB9C299A4355FF5FFF /* OPBackgroundObserver.h in Headers */,
+				0915A0133751D2C1C735EE398EEE30CA /* OPBlockObserver.h in Headers */,
+				98C00E418D97FC9EAAA8CE7F6162E526 /* OPBlockOperation.h in Headers */,
+				722B7E44A25C0BF018B7D7100D10E412 /* OPContactsCondition.h in Headers */,
+				688EBEE68504DDF70B3A86B4E863C96A /* OPContactsPermissionOperation.h in Headers */,
+				65F06F0FBC1FF1AAB5C7E6AF6E283284 /* OPDelayOperation.h in Headers */,
+				7A266A5606EBF2FA5DF1640588B2CD9B /* Operative.h in Headers */,
+				4810D7DC5D0F74440AE3D6F9CFB36BB9 /* OPExclusivityController.h in Headers */,
+				89EF5A76C81462E89FCF553A225BB0BF /* OPGroupOperation.h in Headers */,
+				1D6634873DA1F3D671EFEE04087FDB8D /* OPLocationCondition.h in Headers */,
+				718BBEB47A67FA20F41E3F86E8D185E5 /* OPLocationOperation.h in Headers */,
+				7AA68DF0D578FD4C7009154760DBDD7A /* OPMediaPermissionOperation.h in Headers */,
+				957404703482B0CC8F071DE824FC11C2 /* OPNegatedCondition.h in Headers */,
+				641FD926D2FD840098A6C393B010C067 /* OPNetworkObserver.h in Headers */,
+				855424C593AE954F2A861194D31FDD51 /* OPNoCancelledDependenciesCondition.h in Headers */,
+				AE687480A87CE2208AD2F271A417E7E8 /* OPOperation.h in Headers */,
+				334030BC1ABF1535639E6C555C8BCE4E /* OPOperationCondition.h in Headers */,
+				D05BD04C812E8D26A9CDEEDD22F75386 /* OPOperationConditionEvaluator.h in Headers */,
+				1A4E19723BF67C9E32A18E73A102D95F /* OPOperationConditionMutuallyExclusive.h in Headers */,
+				7BD30565E931692805C771E9FFF40DBB /* OPOperationConditionUserNotification.h in Headers */,
+				4B6567B94A896F140DA0F4EBFBA1E6A4 /* OPOperationObserver.h in Headers */,
+				A71971047FFB282BCAD1F58835A49031 /* OPOperationQueue.h in Headers */,
+				076D38BE545B84FCFDA3227B63ED21D0 /* OPPhotosCondition.h in Headers */,
+				298924B8F84A02376CEFA58BE40E085E /* OPReachabilityCondition.h in Headers */,
+				8DC4B64B3490763F56A4F39BD54E24C6 /* OPRemoteNotificationCondition.h in Headers */,
+				1B9D1CBBF0E0C4F8DFFB31EBFCBD1D78 /* OPSilentCondition.h in Headers */,
+				32E5000F7C7F15688B0B046F51D3D935 /* OPTimeoutObserver.h in Headers */,
+				1ADA44F5DCB7B463BBE6C0083F8C0823 /* OPURLSessionTaskOperation.h in Headers */,
+				5A7A795FB1916752E921BD5BB202D621 /* OPVideoCondition.h in Headers */,
+				E7CC9001216714C68995ACC6329906F4 /* UIUserNotificationSettings+Operative.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +596,7 @@
 			);
 			name = "Pods-Operative_Example";
 			productName = "Pods-Operative_Example";
-			productReference = 8F42575F2F5190ABF2DBE1418607F8DF /* libPods-Operative_Example.a */;
+			productReference = 8C472C2FE53D0A4F965B6BA4B177AD0A /* libPods-Operative_Example.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		55FD40CFFAE71625CA019C8B02040478 /* Pods-Operative_Tests */ = {
@@ -530,43 +613,25 @@
 			);
 			name = "Pods-Operative_Tests";
 			productName = "Pods-Operative_Tests";
-			productReference = 10EA5CB738CC43FAEBA1E5CC8DFCED2E /* libPods-Operative_Tests.a */;
+			productReference = C691D0AE021E7CE4D71459E470114160 /* libPods-Operative_Tests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		743A106E67C07A20C6D04625EBA72D43 /* Operative */ = {
+		DE00356AC14B1CAD4D98226EAAD5FF81 /* Operative */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDB08752479FAF6C90C3EFA459CB912A /* Build configuration list for PBXNativeTarget "Operative" */;
+			buildConfigurationList = 212915E96EAD21608DF09D949FE17D0B /* Build configuration list for PBXNativeTarget "Operative" */;
 			buildPhases = (
-				F20D8B3D6D89E995C53BACD7288D1F0C /* Sources */,
-				1795490B0A1BA0CB43B24254B910AD36 /* Frameworks */,
-				BBAABE4576EB3BDB5EA2E692CAC9CA41 /* Headers */,
+				757490926ACFA3DA81615B89FEAEA705 /* Sources */,
+				D88D03C6334C788684365D0EEE396A91 /* Frameworks */,
+				40FA91731739DE24ADBC1267459B6070 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3CD04EB02860D98472B08B4B9170C14D /* PBXTargetDependency */,
 			);
 			name = Operative;
 			productName = Operative;
-			productReference = EFC161C6335D2913AE15DA72749C17F9 /* libOperative.a */;
+			productReference = 52F092588E3C70A0DFE4F62FB828D64D /* libOperative.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		EC9CB571EF25C5DA3D6607CA0E3F074B /* Operative-Operative */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ED3B7A0B977BDD06C22274F8FD00A6BC /* Build configuration list for PBXNativeTarget "Operative-Operative" */;
-			buildPhases = (
-				294393614CE7574AC1247C09BC5B594A /* Sources */,
-				39ACCD83EC50056DDB5893148F78E692 /* Frameworks */,
-				014ED066B96599A9353E63293F64B78D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Operative-Operative";
-			productName = "Operative-Operative";
-			productReference = 7FEFE3EBC9BBC37FAE5CFA2B49017930 /* Operative.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -585,33 +650,55 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C2DD90E4583DB689B5DE2375DEB35B96 /* Products */;
+			productRefGroup = 78F5F4ED7CF2EB68FD241B9B6D2A553A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				743A106E67C07A20C6D04625EBA72D43 /* Operative */,
-				EC9CB571EF25C5DA3D6607CA0E3F074B /* Operative-Operative */,
+				DE00356AC14B1CAD4D98226EAAD5FF81 /* Operative */,
 				2FF61E882CDA564896EB0C240D7C5F0B /* Pods-Operative_Example */,
 				55FD40CFFAE71625CA019C8B02040478 /* Pods-Operative_Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		014ED066B96599A9353E63293F64B78D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		294393614CE7574AC1247C09BC5B594A /* Sources */ = {
+		757490926ACFA3DA81615B89FEAEA705 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFACAB12B8B4DA0E3F6FEAE757AAF79A /* NSError+Operative.m in Sources */,
+				423974206789F06C69A868A0C7009FA2 /* NSMutableDictionary+Operative.m in Sources */,
+				37B81148AC2BEA6B6C2F0BDE84022541 /* NSOperation+Operative.m in Sources */,
+				F5EEA0D9D94AB75DC7B9E902FD10C690 /* OPAlertOperation.m in Sources */,
+				C6EC695746A158B8A9D76EA7807CB652 /* OPAudioCondition.m in Sources */,
+				EE928CEB7FFF8FABD674425ACF263A36 /* OPBackgroundObserver.m in Sources */,
+				6FCBE4CE29C08723DF2F868D37DEBBB3 /* OPBlockObserver.m in Sources */,
+				2F7D83651973474D209C3A0D412B3E01 /* OPBlockOperation.m in Sources */,
+				48B84996E84BD7F90A3919477F7EFF2E /* OPContactsCondition.m in Sources */,
+				CCEFE556277AE49D5F3712B0B63C38D0 /* OPContactsPermissionOperation.m in Sources */,
+				C0A624B6669B378C91CA8F9B63CD1AB5 /* OPDelayOperation.m in Sources */,
+				1FE0DA2FCB03B0AF47FC89CFEC4E8967 /* Operative-dummy.m in Sources */,
+				5E36196271A21707DFAEDEFDE864E812 /* OPExclusivityController.m in Sources */,
+				095AB64AE991B33C3F3CDC23E39AF718 /* OPGroupOperation.m in Sources */,
+				2D33BB4DB81B8B5327E62978F2CCDEA8 /* OPLocationCondition.m in Sources */,
+				69DE9DFE87119803B0DC3B846DDA3325 /* OPLocationOperation.m in Sources */,
+				DA761FBB3D5BFBF7E9DD98E34195B7DE /* OPMediaPermissionOperation.m in Sources */,
+				E17A983828CE2F35F0D5E5CA617A7D8F /* OPNegatedCondition.m in Sources */,
+				1B62A4501D16431AA19F0FBE624B1621 /* OPNetworkObserver.m in Sources */,
+				C6D78895A302602D5E48A7C97BC5D500 /* OPNoCancelledDependenciesCondition.m in Sources */,
+				FBA6491560CBEC74740FC903E8072E83 /* OPOperation.m in Sources */,
+				A7BF258F31425BA031F237EAFACFBFC9 /* OPOperationConditionEvaluator.m in Sources */,
+				72DEA9232551E2DF03965E6E90505FA6 /* OPOperationConditionMutuallyExclusive.m in Sources */,
+				48794180252DFAA74FF0032BF260E103 /* OPOperationConditionUserNotification.m in Sources */,
+				BCB9696257C1B4335C4635518A23D433 /* OPOperationQueue.m in Sources */,
+				52A1939D8D6EB5E54FF397AD2D9FC544 /* OPPhotosCondition.m in Sources */,
+				E24B8A73C928CFB62A915AA08010E2A6 /* OPReachabilityCondition.m in Sources */,
+				B886E49CC98B8CA311B72EBF97A7FA51 /* OPRemoteNotificationCondition.m in Sources */,
+				418821E7514FE8C49EDBAB3EEC035B11 /* OPSilentCondition.m in Sources */,
+				744F50ED81D011AA1A3592D4AEB87361 /* OPTimeoutObserver.m in Sources */,
+				9F6CF31C0A798EB4801B883B23DD5508 /* OPURLSessionTaskOperation.m in Sources */,
+				CD4E035735A84DD77095FF5261F523F8 /* OPVideoCondition.m in Sources */,
+				BC04EEC37EE69081903C8D67B2E32D1A /* UIUserNotificationSettings+Operative.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,95 +718,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F20D8B3D6D89E995C53BACD7288D1F0C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6450237F19AC82569715292CCF6C6FF0 /* NSError+Operative.m in Sources */,
-				A7E06C49F820EA471E10E49B9EE176B9 /* NSMutableDictionary+Operative.m in Sources */,
-				96238766C92591BB5673DECA5740BADB /* NSOperation+Operative.m in Sources */,
-				EC9703C99DC4FE3C923A963C7190BC51 /* OPAlertOperation.m in Sources */,
-				E0DF246AD6299C6D065683D7D78891C7 /* OPBackgroundObserver.m in Sources */,
-				F42E3D11EBCC1F1CF89FEAB407C68442 /* OPBlockObserver.m in Sources */,
-				A551CDC32156AC3387FBF99981E07A7C /* OPBlockOperation.m in Sources */,
-				7EB05362F0F830A328FAEF829AEF2F2F /* OPDelayOperation.m in Sources */,
-				FE306F1B7A4384AAD07E8333BBC4CB3B /* Operative-dummy.m in Sources */,
-				FA5A000AC1E6E0DE0BFD50E320BB64F6 /* OPExclusivityController.m in Sources */,
-				226A2E1A6363DE3E0C5FB55C8D410B9B /* OPGroupOperation.m in Sources */,
-				61C6ED26F1FACB34E4C9A1F780214271 /* OPLocationCondition.m in Sources */,
-				4B4128F26E2E70E221E3D969B549FE1E /* OPLocationOperation.m in Sources */,
-				B0AB848656603973B9E6A86173B6509B /* OPNegatedCondition.m in Sources */,
-				D0AFE73D5255FAF32E6D70747559F06D /* OPNetworkObserver.m in Sources */,
-				431C8901D57E5F291C028A926FEE8076 /* OPNoCancelledDependenciesCondition.m in Sources */,
-				BB9094DA6BAC0BD52B760841683547D3 /* OPOperation.m in Sources */,
-				0BA61879CB74F15CA519FA810A184B37 /* OPOperationConditionEvaluator.m in Sources */,
-				5CF602277BAE99851B01F047133D869E /* OPOperationConditionMutuallyExclusive.m in Sources */,
-				9B022D6796358D3AFAAA57CFE3F87DFD /* OPOperationConditionUserNotification.m in Sources */,
-				DFB09B9B2113F47C6FC13A27CAD435AA /* OPOperationQueue.m in Sources */,
-				B2BC7C500AAFE34F38E5BB0296821D07 /* OPPhotosCondition.m in Sources */,
-				ED7001E4BFD8CDEEC42570A198A13300 /* OPReachabilityCondition.m in Sources */,
-				CB8F443CB251F3587CB1188E8FCC51D6 /* OPRemoteNotificationCondition.m in Sources */,
-				031025BDA7810D69D046E666370C106F /* OPSilentCondition.m in Sources */,
-				5B6AFE862F1E85809EB38FB5565551AB /* OPTimeoutObserver.m in Sources */,
-				ADBDEE4079105437990AC74AE8C22C39 /* OPURLSessionTaskOperation.m in Sources */,
-				900F9202C4CFCCBF53CE8CD6F152B042 /* UIUserNotificationSettings+Operative.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3CD04EB02860D98472B08B4B9170C14D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Operative-Operative";
-			target = EC9CB571EF25C5DA3D6607CA0E3F074B /* Operative-Operative */;
-			targetProxy = 92622E4E7E20DB04D2194F0111B5B52E /* PBXContainerItemProxy */;
-		};
 		8B9C22336EEAEF5D50161FDBF0FEE1AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Operative;
-			target = 743A106E67C07A20C6D04625EBA72D43 /* Operative */;
+			target = DE00356AC14B1CAD4D98226EAAD5FF81 /* Operative */;
 			targetProxy = F2567E329321F1AA615BBFE9426FFF65 /* PBXContainerItemProxy */;
 		};
 		9975BB116069DDE9EFF4981DDAB7E81C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Operative;
-			target = 743A106E67C07A20C6D04625EBA72D43 /* Operative */;
+			target = DE00356AC14B1CAD4D98226EAAD5FF81 /* Operative */;
 			targetProxy = 93E656DEAF5CDDCE0E670C14D43916DA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		042745FAB5AFF1BB27B7029BFF163FC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12611C8890F5C7AB27E826602B1F87C5 /* Operative.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Operative;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		263E410A2099BA42DF9B6EA00CEABAC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12611C8890F5C7AB27E826602B1F87C5 /* Operative.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Operative/Operative-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		2E1A5D511BFE0862082D96D22BA83276 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 571D1F76107480CA8260827B9C067918 /* Pods-Operative_Example.debug.xcconfig */;
@@ -754,26 +770,14 @@
 			};
 			name = Debug;
 		};
-		43AEEDF3FABA415D63C731EF162D0383 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12611C8890F5C7AB27E826602B1F87C5 /* Operative.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Operative;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		5801EE48863283E59EAD50899EB3AA5E /* Release */ = {
+		84A3F79DD8DF43BCC09E7692C14C873B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 12611C8890F5C7AB27E826602B1F87C5 /* Operative.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Operative/Operative-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -782,7 +786,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		9F2BDD186FCC3DAD3DCB20B638AE601A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -839,6 +843,24 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		B1140C85A5AD605D4C1A070134495F37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12611C8890F5C7AB27E826602B1F87C5 /* Operative.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Operative/Operative-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		E886FC22452CBC8F99921E62017C09E6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -903,6 +925,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		212915E96EAD21608DF09D949FE17D0B /* Build configuration list for PBXNativeTarget "Operative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A3F79DD8DF43BCC09E7692C14C873B /* Debug */,
+				B1140C85A5AD605D4C1A070134495F37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -917,24 +948,6 @@
 			buildConfigurations = (
 				395E71272F4E01CFD8B25030E2B8AECB /* Debug */,
 				9F2BDD186FCC3DAD3DCB20B638AE601A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CDB08752479FAF6C90C3EFA459CB912A /* Build configuration list for PBXNativeTarget "Operative" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				263E410A2099BA42DF9B6EA00CEABAC3 /* Debug */,
-				5801EE48863283E59EAD50899EB3AA5E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ED3B7A0B977BDD06C22274F8FD00A6BC /* Build configuration list for PBXNativeTarget "Operative-Operative" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				042745FAB5AFF1BB27B7029BFF163FC9 /* Debug */,
-				43AEEDF3FABA415D63C731EF162D0383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
