@@ -201,6 +201,14 @@
     [self finishWithError:nil];
 }
 
+- (void)cancel {
+    [super cancel];
+    
+    if([self isExecuting] && ![self isFinished]) {
+        [self finish];
+    }
+}
+
 - (void)cancelWithError:(NSError *)error
 {
     if (error) {
