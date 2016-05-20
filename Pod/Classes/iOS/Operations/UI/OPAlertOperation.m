@@ -64,13 +64,24 @@
 
 - (void)execute
 {
-    if (![self presentationContext]) {
-        [self finish];
-        return;
-    }
-
     dispatch_async(dispatch_get_main_queue(), ^{
         if([self isCancelled]) {
+            return;
+        }
+        
+        UIViewController *presentationContext = _presentationContext;
+        
+        if(!presentationContext) {
+            presentationContext = [[[UIApplication sharedApplication] keyWindow] rootViewController];
+            
+            // find top controller
+            while(presentationContext.presentedViewController) {
+                presentationContext = presentationContext.presentedViewController;
+            }
+        }
+        
+        if(!presentationContext) {
+            [self finish];
             return;
         }
         
@@ -78,7 +89,7 @@
             [self addAction:@"OK" style:UIAlertActionStyleDefault handler:nil];
         }
 
-        [self.presentationContext presentViewController:[self alertController] animated:YES completion:nil];
+        [presentationContext presentViewController:[self alertController] animated:YES completion:nil];
     });
 }
 
@@ -148,7 +159,7 @@
 
     _alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:preferredStyle];
     
-    _presentationContext = presentationContext ?: [[[UIApplication sharedApplication] keyWindow] rootViewController];
+    _presentationContext = presentationContext;
     
     [self addCondition:[OPOperationConditionMutuallyExclusive alertPresentationExclusivity]];
     
