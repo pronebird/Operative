@@ -1,4 +1,4 @@
-// OPNoCancelledDependenciesCondition.m
+// OPNoFailedDependenciesCondition.h
 // Copyright (c) 2015 Tom Wilson <tom@toms-stuff.net>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,19 +19,20 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "OPNoCancelledDependenciesCondition.h"
+#import "OPNoFailedDependenciesCondition.h"
+#import "OPOperation.h"
 #import "NSError+Operative.h"
 
-NSString * const kOPCancelledDependenciesKey = @"CancelledDependencies";
+NSString * const kOPFailedDependenciesKey = @"FailedDependencies";
 
-@implementation OPNoCancelledDependenciesCondition
+@implementation OPNoFailedDependenciesCondition
 
 - (BOOL)isMutuallyExclusive {
     return NO;
 }
 
 - (NSString *)name {
-    return @"NoCancelledDependencies";
+    return @"NoFailedDependencies";
 }
 
 - (NSOperation *)dependencyForOperation:(OPOperation *)operation {
@@ -45,20 +46,27 @@ NSString * const kOPCancelledDependenciesKey = @"CancelledDependencies";
     OPOperationConditionResultStatus resultStatus = OPOperationConditionResultStatusSatisfied;
     NSError *error;
     
-    // Verify that all of the dependencies executed.
-    NSMutableArray *cancelled = [[NSMutableArray alloc] init];
+    // Verify that all of the dependencies executed without errors.
+    NSMutableArray *failed = [[NSMutableArray alloc] init];
     
     for(NSOperation *op in operation.dependencies) {
-        if(op.isCancelled) {
-            [cancelled addObject:op];
+        if([op isCancelled]) {
+            [failed addObject:op];
+        }
+        else if([op isKindOfClass:[OPOperation class]]) {
+            OPOperation *anOperation = (OPOperation *)op;
+            
+            if(anOperation.errors.count > 0) {
+                [failed addObject:anOperation];
+            }
         }
     }
     
-    if(cancelled.count > 0) {
+    if(failed.count > 0) {
         // At least one dependency was cancelled; the condition was not satisfied.
         NSDictionary *userInfo = @{
             kOPOperationConditionKey: NSStringFromClass([self class]),
-            kOPCancelledDependenciesKey: [cancelled copy]
+            kOPFailedDependenciesKey: [failed copy]
         };
         
         error = [NSError errorWithCode:OPOperationErrorCodeConditionFailed userInfo:userInfo];
