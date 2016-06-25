@@ -43,6 +43,11 @@
 @property (strong, nonatomic) NSMutableArray *internalErrors;
 
 /**
+ *  Operation errors produced
+ */
+@property (strong, nonatomic) NSArray *errors;
+
+/**
  *  A private property used to store objects conforming to the
  *  `OPOperationObserver` protocol. Observers will be informed of
  *  the `OPOperation`'s state as the operation transitions between them.
@@ -137,12 +142,8 @@
 #pragma mark - Failure state
 #pragma mark -
 
-- (NSArray *)errors {
-    return [self.internalErrors copy];
-}
-
 - (BOOL)isFailed {
-    return (self.internalErrors.count > 0) || self.isCancelled;
+    return (self.errors.count > 0) || self.isCancelled;
 }
 
 #pragma mark - Conditions
@@ -255,6 +256,8 @@
         [self setHasFinishedAlready:YES];
 
         NSArray *combinedErrors = [self.internalErrors arrayByAddingObjectsFromArray:errors];
+        
+        self.errors = combinedErrors;
 
         [self finishedWithErrors:combinedErrors];
 

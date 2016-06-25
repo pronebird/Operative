@@ -45,12 +45,12 @@
 /**
  *  An array of errors produced by operation and its conditions.
  */
-@property (nonatomic, readonly) NSArray *errors;
+@property (strong, nonatomic, readonly) NSArray *errors;
 
 /**
  *  Whether operation failed during execution or was cancelled with error.
  */
-@property (nonatomic, readonly, getter=isFailed) BOOL failed;
+@property (assign, nonatomic, readonly, getter=isFailed) BOOL failed;
 
 /**
  *  An array of objects that conform to the `OPOperationCondition`
