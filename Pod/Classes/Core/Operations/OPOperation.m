@@ -134,6 +134,13 @@
     [self setQualityOfService:userInitiated ? NSOperationQualityOfServiceUserInitiated : NSOperationQualityOfServiceUtility];
 }
 
+#pragma mark - Errors
+#pragma mark -
+
+- (NSArray *)errors {
+    return [self.internalErrors copy];
+}
+
 
 #pragma mark - Conditions
 #pragma mark -

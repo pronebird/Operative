@@ -43,6 +43,11 @@
 @property (assign, nonatomic) BOOL userInitiated;
 
 /**
+ *  An array of errors produced by operation and its conditions.
+ */
+@property (nonatomic, readonly) NSArray *errors;
+
+/**
  *  An array of objects that conform to the `OPOperationCondition`
  *  protocol. Before execution of the operation, conditions will be
  *  checked and if met the operation will execute as normal.
