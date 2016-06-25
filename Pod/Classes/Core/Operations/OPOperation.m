@@ -142,7 +142,7 @@
 }
 
 - (BOOL)isFailed {
-    return (self.internalErrors.count > 0);
+    return (self.internalErrors.count > 0) || self.isCancelled;
 }
 
 #pragma mark - Conditions
