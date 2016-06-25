@@ -56,7 +56,7 @@ NSString * const kOPFailedDependenciesKey = @"FailedDependencies";
         else if([op isKindOfClass:[OPOperation class]]) {
             OPOperation *anOperation = (OPOperation *)op;
             
-            if(anOperation.errors.count > 0) {
+            if(anOperation.isFailed) {
                 [failed addObject:anOperation];
             }
         }

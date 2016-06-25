@@ -48,6 +48,11 @@
 @property (nonatomic, readonly) NSArray *errors;
 
 /**
+ *  Whether operation failed during execution or was cancelled with error.
+ */
+@property (nonatomic, readonly, getter=isFailed) BOOL failed;
+
+/**
  *  An array of objects that conform to the `OPOperationCondition`
  *  protocol. Before execution of the operation, conditions will be
  *  checked and if met the operation will execute as normal.
