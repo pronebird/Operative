@@ -93,8 +93,8 @@
 
 - (void)cancel
 {
-    [self.internalQueue cancelAllOperations];
     [super cancel];
+    [self.internalQueue cancelAllOperations];
 }
 
 - (void)execute
