@@ -33,8 +33,19 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files     = 'Pod/Classes/Operative.h'
-  s.ios.source_files = 'Pod/Classes/{Core,iOS}/**/*'
-  s.osx.source_files = 'Pod/Classes/{Core,OSX}/**/*'
+  
+  s.default_subspec  = 'Core'
+
+  s.subspec 'Core' do |ss|
+    ss.ios.source_files = 'Pod/Classes/{Core,iOS}/**/*'
+    ss.osx.source_files = 'Pod/Classes/{Core,OSX}/**/*'
+  end
+
+  s.subspec 'Extension' do |ss|
+    ss.platform = :ios
+    ss.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) OP_TARGET_IS_EXTENSION' }
+    ss.dependency 'Operative/Core'
+  end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
 

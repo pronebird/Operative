@@ -26,6 +26,7 @@
  *  An `OPOperationObserver` that will cause the network activity indicator
  *  to appear as long as the `OPOperation` to which it is attached is executing.
  */
+NS_EXTENSION_UNAVAILABLE_IOS("")
 @interface OPNetworkObserver : NSObject <OPOperationObserver>
 
 @end

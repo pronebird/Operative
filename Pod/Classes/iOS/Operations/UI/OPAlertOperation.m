@@ -70,7 +70,10 @@
         }
         
         UIViewController *presentationContext = _presentationContext;
-        
+
+#ifndef OP_TARGET_IS_EXTENSION
+        // we cannot dynamically detect the topmost controller on extensions
+        // since we don't have access to UIApplication
         if(!presentationContext) {
             presentationContext = [[[UIApplication sharedApplication] keyWindow] rootViewController];
             
@@ -79,7 +82,8 @@
                 presentationContext = presentationContext.presentedViewController;
             }
         }
-        
+#endif
+
         if(!presentationContext) {
             [self finish];
             return;
@@ -151,6 +155,12 @@
 - (instancetype)initWithPresentationContext:(UIViewController *)presentationContext
                              preferredStyle:(UIAlertControllerStyle)preferredStyle
 {
+#ifndef OP_TARGET_IS_EXTENSION
+    // we cannot dynamically detect the topmost controller on extensions
+    // since we don't have access to UIApplication
+    NSParameterAssert(presentationContext);
+#endif
+    
     self = [super init];
 
     if (!self) {

@@ -31,6 +31,7 @@
  *  regardless of the activation state of the app. Some kinds network connections
  *  may fall in to this category, for example.
  */
+NS_EXTENSION_UNAVAILABLE_IOS("")
 @interface OPBackgroundObserver : NSObject <OPOperationObserver>
 
 @end

@@ -43,9 +43,10 @@
 /**
  *  A singleton to manage a visual "reference count" on the network activity indicator.
  */
+NS_EXTENSION_UNAVAILABLE_IOS("")
 @interface OPNetworkIndicatorController : NSObject
 
-+ (OPNetworkIndicatorController *)sharedInstance;
++ (OPNetworkIndicatorController *)sharedInstance NS_EXTENSION_UNAVAILABLE_IOS("");
 
 @property (assign, nonatomic) NSUInteger activityCount;
 
@@ -62,7 +63,7 @@
 
 @implementation OPNetworkObserver
 
-- (void)operationDidStart:(OPOperation *)operation
+- (void)operationDidStart:(OPOperation *)operation NS_EXTENSION_UNAVAILABLE_IOS("")
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         // Increment the network indicator's "reference count"
@@ -72,7 +73,7 @@
 
 - (void)operation:(OPOperation *)operation didProduceOperation:(NSOperation *)newOperation {}
 
-- (void)operation:(OPOperation *)operation didFinishWithErrors:(NSArray *)errors
+- (void)operation:(OPOperation *)operation didFinishWithErrors:(NSArray *)errors NS_EXTENSION_UNAVAILABLE_IOS("")
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         // Decrement the network indicator's "reference count".
