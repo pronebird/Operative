@@ -30,6 +30,25 @@ it, simply add the following line to your Podfile:
 pod "Operative"
 ```
 
+## App extensions
+
+Add the following line to your podspec in order to compiler Operative for extension:
+
+```ruby
+post_install do |installer|
+  # NOTE: If you are using a CocoaPods version prior to 0.38, replace `pods_project` with `project` on the below line
+  installer.pods_project.targets.each do |target|
+    if target.name.end_with? "Operative"
+      target.build_configurations.each do |build_configuration|
+        if build_configuration.build_settings['APPLICATION_EXTENSION_API_ONLY'] == 'YES'
+          build_configuration.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = ['$(inherited)', 'OP_TARGET_IS_EXTENSION=1']
+        end
+      end
+    end
+  end
+end
+```
+
 ## Author
 
 Tom Wilson, tom@toms-stuff.net
