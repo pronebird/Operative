@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
   s.subspec 'Extension' do |ss|
     ss.platform = :ios
     ss.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) OP_TARGET_IS_EXTENSION' }
-    ss.dependency 'Operative/Core'
+    ss.ios.source_files = 'Pod/Classes/{Core,iOS}/**/*'
   end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
