@@ -25,7 +25,7 @@
 
 #import <UIKit/UIKit.h>
 
-
+NS_EXTENSION_UNAVAILABLE_IOS("")
 @interface OPAlertOperation : OPOperation
 
 /**
