@@ -177,26 +177,28 @@ NSString * const kDesiredSettings = @"DesiredUserNotificationSettings";
 - (void)evaluateConditionForOperation:(OPOperation *)operation
                            completion:(void (^)(OPOperationConditionResultStatus result, NSError *error))completion
 {
-    // Satisfied until not
-    OPOperationConditionResultStatus result = OPOperationConditionResultStatusSatisfied;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // Satisfied until not
+        OPOperationConditionResultStatus result = OPOperationConditionResultStatusSatisfied;
 
-    NSError *error = nil;
+        NSError *error = nil;
 
-    UIUserNotificationSettings *current = [self.application currentUserNotificationSettings];
+        UIUserNotificationSettings *current = [self.application currentUserNotificationSettings];
 
-    if ([current containsSettings:[self settings]]) {
-        // No-op
-    } else {
-        NSDictionary *userInfo = @{
-            kOPOperationConditionKey : NSStringFromClass([self class]),
-            kCurrentSettings         : current ? : [NSNull null],
-            kDesiredSettings         : [self settings]
-        };
-        error = [NSError errorWithCode:OPOperationErrorCodeConditionFailed userInfo:userInfo];
-        result = OPOperationConditionResultStatusFailed;
-    }
+        if ([current containsSettings:[self settings]]) {
+            // No-op
+        } else {
+            NSDictionary *userInfo = @{
+                kOPOperationConditionKey : NSStringFromClass([self class]),
+                kCurrentSettings         : current ? : [NSNull null],
+                kDesiredSettings         : [self settings]
+            };
+            error = [NSError errorWithCode:OPOperationErrorCodeConditionFailed userInfo:userInfo];
+            result = OPOperationConditionResultStatusFailed;
+        }
 
-    completion(result, error);
+        completion(result, error);
+    });
 }
 
 @end
